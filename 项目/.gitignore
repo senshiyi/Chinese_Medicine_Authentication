@@ -1,0 +1,24 @@
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+Cache/*.patch
+Cache/
+__pycache__/
+*.pyc
+.DS_Store
+项目/Results/
+# 原始训练图片是本机数据，不纳入 Git。
+项目/References/raw/
+项目/Data/validation_report.json
+项目/Data/**/manifest_validation.json
+项目/Data/splits.json
+项目/Data/train.csv
+项目/Data/val.csv
+项目/Data/test.csv
+# 实验子目录中的分区 CSV 会包含本机绝对图片路径，可由 metadata.csv + splits.json 重建。
+项目/Data/**/validation_report.json
+项目/Data/**/train.csv
+项目/Data/**/val.csv
+项目/Data/**/test.csv
+*.pth

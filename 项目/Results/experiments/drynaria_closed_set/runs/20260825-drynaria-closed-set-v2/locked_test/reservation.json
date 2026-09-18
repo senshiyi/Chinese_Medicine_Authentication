@@ -1,0 +1,11 @@
+{
+  "fingerprints": {
+    "calibration": "e25895c7dce0b1258377561af4a8a5bb73d1e8a6201c627b244d4470a13d1a95",
+    "config": "6aeba8c88f16bc0a3fcc6dd0b4cb6a5f2ba52ddd6d3e41ba2b9b5cef22d58100",
+    "manifest": "c93b391799ee1787a10a62ac99e54c2919df4f517fbc90aac0a0222040a7412b",
+    "source_candidate": "2f65525518d5c8f7fe92b814b1a7be4eddf318ac830efbee221566d04a7ae8b1",
+    "split": "931c7705b768311dae4057c1f3e6cd4bcbc2077f137ea1923b9b2c96ed68d495"
+  },
+  "run_id": "20260825-drynaria-closed-set-v2",
+  "schema_version": 1
+}

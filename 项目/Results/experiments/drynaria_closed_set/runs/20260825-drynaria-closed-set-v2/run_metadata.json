@@ -1,0 +1,15 @@
+{
+  "run_id": "20260825-drynaria-closed-set-v2",
+  "checkpoint": "E:\\Desktop\\WorkSpace\\Chinese_Medicine_Authentication\\项目\\Models\\experiments\\drynaria_closed_set.candidate.pth",
+  "selection_formula": "(authenticity_macro_f1 + authenticity_balanced_accuracy) / 2.0",
+  "counterfeit_species_verified": false,
+  "authenticity_class_counts": {
+    "authentic": 235,
+    "counterfeit": 64
+  },
+  "authenticity_class_weights": [
+    0.6361702084541321,
+    2.3359375
+  ],
+  "resume_from": null
+}

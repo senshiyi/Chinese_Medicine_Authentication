@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "status": "valid",
+  "counts": {
+    "known": 2,
+    "unknown": 2
+  },
+  "errors": [],
+  "warnings": []
+}

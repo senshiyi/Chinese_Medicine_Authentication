@@ -1,0 +1,22 @@
+{
+  "python_version": "3.12.13",
+  "torch_version": "2.6.0+cpu",
+  "torchvision_version": "0.21.0",
+  "operating_system": "Windows-11-10.0.26200-SP0",
+  "seed": 42,
+  "deterministic_settings": {
+    "torch_deterministic_algorithms": false,
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false
+  },
+  "config_sha256": "9e259b43fd46ed8c65a35ce4f5523b7dec544c65fbc990716630db692ad27bc6",
+  "command_arguments": [
+    "项目\\Files\\train.py",
+    "--config",
+    "项目\\Files\\config_closed_set.yaml",
+    "--device",
+    "cpu",
+    "--run-id",
+    "20260809-drynaria-closed-set-v1"
+  ]
+}

@@ -1,0 +1,29 @@
+﻿scope,level,metric,value
+known,,status,complete
+known,counts,images,64
+known,counts,samples,64
+known,counts,groups,64
+known,image_level,claimed_macro_f1,1.0
+known,image_level,authenticity_macro_f1,0.8757281553398059
+known,image_level,species_macro_f1,0.7654320987654321
+known,image_level,species_supervision_coverage,0.78125
+known,image_level,selection_score,0.8699791543511403
+known,image_level,selection_tasks,"('claimed_herb', 'actual_species', 'authenticity')"
+known,sample_level,claimed_macro_f1,1.0
+known,sample_level,authenticity_macro_f1,0.8757281553398059
+known,sample_level,species_macro_f1,0.7654320987654321
+known,sample_level,species_supervision_coverage,0.78125
+known,sample_level,selection_score,0.8699791543511403
+known,sample_level,selection_tasks,"('claimed_herb', 'actual_species', 'authenticity')"
+known,group_bootstrap,lower,0.7974910779750336
+known,group_bootstrap,median,0.8684842502360097
+known,group_bootstrap,upper,0.9198441201192024
+known,group_bootstrap,samples,2000
+known,group_bootstrap,seed,42
+known,selective,eligible,50
+known,selective,accepted,31
+known,selective,coverage,0.62
+known,selective,selective_accuracy,1.0
+known,selective,reject_rate,0.38
+unknown,,status,not_available
+unknown,,reason,没有 unknown test 数据

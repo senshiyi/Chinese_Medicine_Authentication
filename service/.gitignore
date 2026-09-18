@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# pytest 本会话临时目录（DSH 沙箱兼容，见根目录 conftest.py）
+testtmp/
+
+# 可重建的沙箱/探针残留（部分目录 DACL 受限无法删除）
+.cache/
+wprobe/
+pytest-cache-files-*/
+
+# 本地运行数据（可重建）
+var/
+data/local-storage/
+*.sqlite3
+*.db
+
+# 本地预览启动器运行产物（日志/状态，可重建）
+Cache/local-services/
+
+# Node / Web
+apps/web/node_modules/
+apps/web/dist/
+apps/web/coverage/
+apps/web/playwright-report/
+apps/web/test-results/
+
+# 环境与密钥
+.env
+.env.local
+
+# 编辑器
+.vscode/
+.idea/

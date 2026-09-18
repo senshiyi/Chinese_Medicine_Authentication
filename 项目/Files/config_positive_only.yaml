@@ -1,0 +1,60 @@
+# 仅使用 Drynaria_fortunei 正品照片的流程验证配置（UTF-8）。
+# 此实验不包含伪品或 unknown 数据，输出不得解释为正式鉴伪准确率。
+project_root: "../.."
+
+data:
+  manifest_path: "项目/Data/experiments/drynaria_positive_only/metadata.csv"
+  unknown_manifest_path: null
+  data_root: "项目/References"
+  provenance: "real"
+  text_encoding: "utf-8-sig"
+  image_size: 224
+  batch_size: 8
+  num_workers: 0
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  seed: 42
+  max_image_bytes: 20971520
+  max_image_pixels: 40000000
+  perceptual_hash_distance: 4
+  use_weighted_sampler: false
+
+model:
+  backbone: "efficientnet_b0"
+  pretrained: true
+  freeze_backbone: true
+  # 本次最多训练 10 轮，因此保持预训练骨干冻结，只训练任务头。
+  unfreeze_epoch: 100
+  dropout: 0.3
+
+training:
+  epochs: 10
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  claimed_herb_weight: 1.0
+  actual_species_weight: 1.0
+  authenticity_weight: 1.0
+  label_smoothing: 0.0
+  early_stop_patience: 3
+  mixed_precision: false
+  gradient_clip: 1.0
+  min_species_supervision_coverage: 1.0
+  checkpoint_path: "项目/Models/experiments/drynaria_positive_only.pth"
+  log_dir: "项目/Results/experiments/drynaria_positive_only/logs"
+
+calibration:
+  max_unknown_accept_rate: 0.05
+  min_known_selective_accuracy: 0.95
+  output_checkpoint_path: "项目/Models/experiments/drynaria_positive_only.calibrated.pth"
+
+evaluation:
+  report_dir: "项目/Results/experiments/drynaria_positive_only/evaluation"
+  bootstrap_samples: 200
+
+inference:
+  checkpoint_path: "项目/Models/experiments/drynaria_positive_only.pth"
+  device: "cpu"
+  allow_uncalibrated: false
+  max_image_bytes: 20971520
+  max_image_pixels: 40000000

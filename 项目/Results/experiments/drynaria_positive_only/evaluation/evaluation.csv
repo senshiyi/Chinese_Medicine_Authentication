@@ -1,0 +1,29 @@
+﻿scope,level,metric,value
+known,,status,complete
+known,counts,images,12
+known,counts,samples,6
+known,counts,groups,6
+known,image_level,claimed_macro_f1,1.0
+known,image_level,authenticity_macro_f1,0.5
+known,image_level,species_macro_f1,1.0
+known,image_level,species_supervision_coverage,1.0
+known,image_level,selection_score,0.75
+known,image_level,selection_tasks,"('claimed_herb', 'actual_species', 'authenticity')"
+known,sample_level,claimed_macro_f1,1.0
+known,sample_level,authenticity_macro_f1,0.5
+known,sample_level,species_macro_f1,1.0
+known,sample_level,species_supervision_coverage,1.0
+known,sample_level,selection_score,0.75
+known,sample_level,selection_tasks,"('claimed_herb', 'actual_species', 'authenticity')"
+known,group_bootstrap,lower,0.75
+known,group_bootstrap,median,0.75
+known,group_bootstrap,upper,0.75
+known,group_bootstrap,samples,200
+known,group_bootstrap,seed,42
+known,selective,eligible,12
+known,selective,accepted,12
+known,selective,coverage,1.0
+known,selective,selective_accuracy,1.0
+known,selective,reject_rate,0.0
+unknown,,status,not_available
+unknown,,reason,没有 unknown test 数据

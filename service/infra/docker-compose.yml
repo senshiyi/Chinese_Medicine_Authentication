@@ -1,0 +1,167 @@
+# =============================================================
+# 骨碎补在线真伪鉴定 V2 — 阶段 A 单机 Compose
+# 用法：docker compose -f infra/docker-compose.yml up -d --build
+# 生产 HTTPS 模板见 infra/nginx/default.conf 注释；所有服务命名以 stage A 隔离。
+# =============================================================
+
+name: drynaria-stage-a
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: drynaria
+      POSTGRES_PASSWORD: drynaria-stage-a-local-only
+      POSTGRES_DB: drynaria_stage_a
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U drynaria -d drynaria_stage_a"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  minio:
+    image: minio/minio:RELEASE.2024-12-18T13-15-44Z
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: drynaria-minio
+      MINIO_ROOT_PASSWORD: minio-stage-a-local-only
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - miniodata:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  api:
+    build:
+      context: ..
+      dockerfile: apps/api/Dockerfile
+    environment:
+      DRYNARIA_ENVIRONMENT: dev
+      DATABASE_URL: postgresql+psycopg://drynaria:drynaria-stage-a-local-only@postgres:5432/drynaria_stage_a
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      STORAGE_BACKEND: s3
+      S3_ENDPOINT_URL: http://minio:9000
+      S3_BUCKET: drynaria-stage-a
+      S3_ACCESS_KEY: drynaria-minio
+      S3_SECRET_KEY: minio-stage-a-local-only
+      MODEL_VERSION_HINT: closed-set-v1
+      STRATEGY_VERSION: stage-a-strategy-v1
+      ALLOWED_ORIGINS: http://localhost:8080,http://127.0.0.1:8080
+      COOKIE_SECURE: "false"
+      AUTO_CREATE_TABLES: "false"
+    command:
+      - sh
+      - -c
+      - alembic -c apps/api/alembic.ini upgrade head && uvicorn drynaria_api.main:app --host 0.0.0.0 --port 8000
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    expose:
+      - "8000"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/api/v1/health', timeout=5).status==200 else 1)"
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    # 注意：API 容器不挂载模型目录，不安装 torch。
+
+  worker:
+    build:
+      context: ..
+      dockerfile: apps/api/Dockerfile
+      args:
+        INSTALL_TORCH: "1"
+    environment:
+      DRYNARIA_ENVIRONMENT: dev
+      DATABASE_URL: postgresql+psycopg://drynaria:drynaria-stage-a-local-only@postgres:5432/drynaria_stage_a
+      REDIS_URL: redis://redis:6379/0
+      CELERY_BROKER_URL: redis://redis:6379/0
+      CELERY_RESULT_BACKEND: redis://redis:6379/0
+      STORAGE_BACKEND: s3
+      S3_ENDPOINT_URL: http://minio:9000
+      S3_BUCKET: drynaria-stage-a
+      S3_ACCESS_KEY: drynaria-minio
+      S3_SECRET_KEY: minio-stage-a-local-only
+      INFERENCE_PROJECT_PATH: /opt/inference
+      MODEL_CHECKPOINT_PATH: /models/best_multitask_model.calibrated.pth
+      MODEL_VERSION_HINT: closed-set-v1
+      STRATEGY_VERSION: stage-a-strategy-v1
+    command:
+      - celery
+      - -A
+      - drynaria_api.worker:celery_app
+      - worker
+      - -Q
+      - stage_a_analysis
+      - -c
+      - "1"
+      - --loglevel=info
+    volumes:
+      # 原实验项目只读挂载到 Worker（API 容器不获得该挂载）
+      - ${ORIGINAL_PROJECT_ROOT:-../项目}/项目/Files:/opt/inference:ro
+      - ${ORIGINAL_PROJECT_ROOT:-../项目}/项目/Models:/models:ro
+    depends_on:
+      api:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+
+  web:
+    build:
+      context: ..
+      dockerfile: apps/web/Dockerfile
+    expose:
+      - "80"
+
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      api:
+        condition: service_healthy
+      web:
+        condition: service_started
+
+volumes:
+  pgdata:
+  redisdata:
+  miniodata:

@@ -1,0 +1,44 @@
+# ---- 实验侧：本地数据与产物（不进 Git） ----
+项目/.venv/
+项目/Results/**/logs/
+项目/References/raw/
+项目/Data/validation_report.json
+项目/Data/**/manifest_validation.json
+项目/Data/splits.json
+项目/Data/train.csv
+项目/Data/val.csv
+项目/Data/test.csv
+项目/Data/**/validation_report.json
+项目/Data/**/train.csv
+项目/Data/**/val.csv
+项目/Data/**/test.csv
+*.pth
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- 临时 / 沙箱残留 ----
+testtmp/
+.cache/
+wprobe/
+pytest-cache-files-*/
+_v3build/
+_v3build.ps1
+_ls.ps1
+_ls.txt
+
+# ---- 服务侧本地数据（启动器会重建） ----
+service/Cache/
+service/var/
+*.sqlite3
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store

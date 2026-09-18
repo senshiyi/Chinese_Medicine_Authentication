@@ -1,0 +1,2562 @@
+{
+  "schema_version": 1,
+  "algorithm_version": "group-stratified-near-duplicate-components-v2",
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "input_fingerprint": "6154edc97e3083cb48bad9dc8f4804b20062aae3cda8ae76ae218c4c7be4dbd2",
+  "perceptual_hash_distance": 4,
+  "by_group": {
+    "df-auth-0001": "train",
+    "df-auth-0002": "train",
+    "df-auth-0003": "train",
+    "df-auth-0004": "train",
+    "df-auth-0005": "test",
+    "df-auth-0006": "train",
+    "df-auth-0007": "train",
+    "df-auth-0008": "train",
+    "df-auth-0009": "train",
+    "df-auth-0010": "val",
+    "df-auth-0011": "val",
+    "df-auth-0012": "train",
+    "df-auth-0013": "train",
+    "df-auth-0014": "train",
+    "df-auth-0015": "train",
+    "df-auth-0016": "test",
+    "df-auth-0017": "train",
+    "df-auth-0018": "train",
+    "df-auth-0019": "val",
+    "df-auth-0020": "test",
+    "df-auth-0021": "train",
+    "df-auth-0022": "train",
+    "df-auth-0023": "train",
+    "df-auth-0024": "train",
+    "df-auth-0025": "train",
+    "df-auth-0026": "train",
+    "df-auth-0027": "train",
+    "df-auth-0028": "train",
+    "df-auth-0029": "train",
+    "df-auth-0030": "train",
+    "df-auth-0031": "test",
+    "df-auth-0032": "train",
+    "df-auth-0033": "train",
+    "df-auth-0034": "train",
+    "df-auth-0035": "train",
+    "df-auth-0036": "train",
+    "df-auth-0037": "train",
+    "df-auth-0038": "train",
+    "df-auth-0039": "train",
+    "df-auth-0040": "train",
+    "df-auth-0041": "val",
+    "df-auth-0042": "train",
+    "df-auth-0043": "test",
+    "df-auth-0044": "test",
+    "df-auth-0045": "train",
+    "df-auth-0046": "train",
+    "df-auth-0047": "train",
+    "df-auth-0048": "test",
+    "df-auth-0049": "test",
+    "df-auth-0050": "train",
+    "df-auth-0051": "train",
+    "df-auth-0052": "train",
+    "df-auth-0053": "train",
+    "df-auth-0054": "train",
+    "df-auth-0055": "train",
+    "df-auth-0056": "train",
+    "df-auth-0057": "train",
+    "df-auth-0058": "train",
+    "df-auth-0059": "train",
+    "df-auth-0060": "train",
+    "df-auth-0061": "test",
+    "df-auth-0062": "test",
+    "df-auth-0063": "test",
+    "df-auth-0064": "test",
+    "df-auth-0065": "train",
+    "df-auth-0066": "train",
+    "df-auth-0067": "train",
+    "df-auth-0068": "train",
+    "df-auth-0069": "train",
+    "df-auth-0070": "train",
+    "df-auth-0071": "test",
+    "df-auth-0072": "test",
+    "df-auth-0073": "train",
+    "df-auth-0074": "train",
+    "df-auth-0075": "test",
+    "df-auth-0076": "test",
+    "df-auth-0077": "train",
+    "df-auth-0078": "train",
+    "df-auth-0079": "train",
+    "df-auth-0080": "train",
+    "df-auth-0081": "train",
+    "df-auth-0082": "val",
+    "df-auth-0083": "val",
+    "df-auth-0084": "val",
+    "df-auth-0085": "train",
+    "df-auth-0086": "train",
+    "df-auth-0087": "train",
+    "df-auth-0088": "train",
+    "df-auth-0089": "train",
+    "df-auth-0090": "train",
+    "df-auth-0091": "train",
+    "df-auth-0092": "train",
+    "df-auth-0093": "train",
+    "df-auth-0094": "val",
+    "df-auth-0095": "train",
+    "df-auth-0096": "train",
+    "df-auth-0097": "train",
+    "df-auth-0098": "val",
+    "df-auth-0099": "val",
+    "df-auth-0100": "train",
+    "df-auth-0101": "train",
+    "df-auth-0102": "train",
+    "df-auth-0103": "train",
+    "df-auth-0104": "val",
+    "df-auth-0105": "train",
+    "df-auth-0106": "train",
+    "df-auth-0107": "train",
+    "df-auth-0108": "train",
+    "df-auth-0109": "val",
+    "df-auth-0110": "train",
+    "df-auth-0111": "train",
+    "df-auth-0112": "train",
+    "df-auth-0113": "train",
+    "df-auth-0114": "train",
+    "df-auth-0115": "val",
+    "df-auth-0116": "test",
+    "df-auth-0117": "test",
+    "df-auth-0118": "test",
+    "df-auth-0119": "train",
+    "df-auth-0120": "train",
+    "df-auth-0121": "val",
+    "df-auth-0122": "train",
+    "df-auth-0123": "val",
+    "df-auth-0124": "train",
+    "df-auth-0125": "val",
+    "df-auth-0126": "train",
+    "df-auth-0127": "test",
+    "df-auth-0128": "val",
+    "df-auth-0129": "val",
+    "df-auth-0130": "test",
+    "df-auth-0131": "train",
+    "df-auth-0132": "test",
+    "df-auth-0133": "train",
+    "df-auth-0134": "train",
+    "df-auth-0135": "train",
+    "df-auth-0136": "train",
+    "df-auth-0137": "test",
+    "df-auth-0138": "train",
+    "df-auth-0139": "train",
+    "df-auth-0140": "train",
+    "df-auth-0141": "train",
+    "df-auth-0142": "train",
+    "df-auth-0143": "train",
+    "df-auth-0144": "test",
+    "df-auth-0145": "train",
+    "df-auth-0146": "test",
+    "df-auth-0147": "val",
+    "df-auth-0148": "train",
+    "df-auth-0149": "train",
+    "df-auth-0150": "test",
+    "df-auth-0151": "train",
+    "df-auth-0152": "train",
+    "df-auth-0153": "test",
+    "df-auth-0154": "train",
+    "df-auth-0155": "test",
+    "df-auth-0156": "train",
+    "df-auth-0157": "train",
+    "df-auth-0158": "train",
+    "df-auth-0159": "train",
+    "df-auth-0160": "train",
+    "df-auth-0161": "val",
+    "df-auth-0162": "train",
+    "df-auth-0163": "train",
+    "df-auth-0164": "train",
+    "df-auth-0165": "val",
+    "df-auth-0166": "train",
+    "df-auth-0167": "train",
+    "df-auth-0168": "train",
+    "df-auth-0169": "train",
+    "df-auth-0170": "val",
+    "df-auth-0171": "train",
+    "df-auth-0172": "val",
+    "df-auth-0173": "train",
+    "df-auth-0174": "val",
+    "df-auth-0175": "train",
+    "df-auth-0176": "train",
+    "df-auth-0177": "train",
+    "df-auth-0178": "train",
+    "df-auth-0179": "test",
+    "df-auth-0180": "train",
+    "df-auth-0181": "train",
+    "df-auth-0182": "train",
+    "df-auth-0183": "val",
+    "df-auth-0184": "val",
+    "df-auth-0185": "train",
+    "df-auth-0186": "train",
+    "df-auth-0187": "test",
+    "df-auth-0188": "test",
+    "df-auth-0189": "train",
+    "df-auth-0190": "val",
+    "df-auth-0191": "test",
+    "df-auth-0192": "test",
+    "df-auth-0193": "train",
+    "df-auth-0194": "train",
+    "df-auth-0195": "train",
+    "df-auth-0196": "train",
+    "df-auth-0197": "test",
+    "df-auth-0198": "train",
+    "df-auth-0199": "train",
+    "df-auth-0200": "train",
+    "df-auth-0201": "val",
+    "df-auth-0202": "test",
+    "df-auth-0203": "test",
+    "df-auth-0204": "val",
+    "df-auth-0205": "train",
+    "df-auth-0206": "val",
+    "df-auth-0207": "test",
+    "df-auth-0208": "val",
+    "df-auth-0209": "val",
+    "df-auth-0210": "test",
+    "df-auth-0211": "test",
+    "df-auth-0212": "train",
+    "df-auth-0213": "train",
+    "df-auth-0214": "train",
+    "df-auth-0215": "val",
+    "df-auth-0216": "train",
+    "df-auth-0217": "train",
+    "df-auth-0218": "train",
+    "df-auth-0219": "test",
+    "df-auth-0220": "val",
+    "df-auth-0221": "train",
+    "df-auth-0222": "train",
+    "df-auth-0223": "train",
+    "df-auth-0224": "train",
+    "df-auth-0225": "train",
+    "df-auth-0226": "train",
+    "df-auth-0227": "val",
+    "df-auth-0228": "train",
+    "df-auth-0229": "train",
+    "df-auth-0230": "train",
+    "df-auth-0231": "train",
+    "df-auth-0232": "train",
+    "df-auth-0233": "test",
+    "df-auth-0234": "train",
+    "df-auth-0235": "test",
+    "df-auth-0236": "train",
+    "df-auth-0237": "train",
+    "df-auth-0238": "train",
+    "df-auth-0239": "val",
+    "df-auth-0240": "train",
+    "df-auth-0241": "val",
+    "df-auth-0242": "train",
+    "df-auth-0243": "val",
+    "df-auth-0244": "train",
+    "df-auth-0245": "train",
+    "df-auth-0246": "train",
+    "df-auth-0247": "train",
+    "df-auth-0248": "train",
+    "df-auth-0249": "train",
+    "df-auth-0250": "val",
+    "df-auth-0251": "train",
+    "df-auth-0252": "train",
+    "df-auth-0253": "train",
+    "df-auth-0254": "test",
+    "df-auth-0255": "test",
+    "df-auth-0256": "train",
+    "df-auth-0257": "train",
+    "df-auth-0258": "train",
+    "df-auth-0259": "train",
+    "df-auth-0260": "train",
+    "df-auth-0261": "val",
+    "df-auth-0262": "train",
+    "df-auth-0263": "train",
+    "df-auth-0264": "train",
+    "df-auth-0265": "train",
+    "df-auth-0266": "test",
+    "df-auth-0267": "train",
+    "df-auth-0268": "train",
+    "df-auth-0269": "train",
+    "df-auth-0270": "train",
+    "df-auth-0271": "train",
+    "df-auth-0272": "train",
+    "df-auth-0273": "train",
+    "df-auth-0274": "train",
+    "df-auth-0275": "train",
+    "df-auth-0276": "train",
+    "df-auth-0277": "train",
+    "df-auth-0278": "train",
+    "df-auth-0279": "train",
+    "df-auth-0280": "train",
+    "df-auth-0281": "train",
+    "df-auth-0282": "val",
+    "df-auth-0283": "train",
+    "df-auth-0284": "val",
+    "df-auth-0285": "train",
+    "df-auth-0286": "test",
+    "df-auth-0287": "train",
+    "df-auth-0288": "train",
+    "df-auth-0289": "train",
+    "df-auth-0290": "train",
+    "df-auth-0291": "train",
+    "df-auth-0292": "train",
+    "df-auth-0293": "train",
+    "df-auth-0294": "val",
+    "df-auth-0295": "val",
+    "df-auth-0296": "val",
+    "df-auth-0297": "train",
+    "df-auth-0298": "train",
+    "df-auth-0299": "train",
+    "df-auth-0300": "val",
+    "df-auth-0301": "train",
+    "df-auth-0302": "train",
+    "df-auth-0303": "train",
+    "df-auth-0304": "train",
+    "df-auth-0305": "test",
+    "df-auth-0306": "train",
+    "df-auth-0307": "train",
+    "df-auth-0308": "train",
+    "df-auth-0309": "val",
+    "df-auth-0310": "train",
+    "df-auth-0311": "train",
+    "df-auth-0312": "train",
+    "df-auth-0313": "train",
+    "df-auth-0314": "train",
+    "df-auth-0315": "train",
+    "df-auth-0316": "train",
+    "df-auth-0317": "train",
+    "df-auth-0318": "val",
+    "df-auth-0319": "test",
+    "df-auth-0320": "train",
+    "df-auth-0321": "train",
+    "df-auth-0322": "train",
+    "df-auth-0323": "train",
+    "df-auth-0324": "train",
+    "df-auth-0325": "train",
+    "df-auth-0326": "train",
+    "df-auth-0327": "train",
+    "df-auth-0328": "test",
+    "df-auth-0329": "train",
+    "df-auth-0330": "train",
+    "df-auth-0331": "train",
+    "df-auth-0332": "val",
+    "df-auth-0333": "test",
+    "df-auth-0334": "val",
+    "df-auth-0335": "train",
+    "df-fake-0001": "train",
+    "df-fake-0002": "test",
+    "df-fake-0003": "val",
+    "df-fake-0004": "train",
+    "df-fake-0005": "train",
+    "df-fake-0006": "train",
+    "df-fake-0007": "train",
+    "df-fake-0008": "test",
+    "df-fake-0009": "test",
+    "df-fake-0010": "train",
+    "df-fake-0011": "val",
+    "df-fake-0012": "train",
+    "df-fake-0013": "train",
+    "df-fake-0014": "train",
+    "df-fake-0015": "train",
+    "df-fake-0016": "train",
+    "df-fake-0017": "test",
+    "df-fake-0018": "val",
+    "df-fake-0019": "train",
+    "df-fake-0020": "train",
+    "df-fake-0021": "train",
+    "df-fake-0022": "train",
+    "df-fake-0023": "train",
+    "df-fake-0024": "train",
+    "df-fake-0025": "train",
+    "df-fake-0026": "train",
+    "df-fake-0027": "val",
+    "df-fake-0028": "train",
+    "df-fake-0029": "train",
+    "df-fake-0030": "test",
+    "df-fake-0031": "train",
+    "df-fake-0032": "train",
+    "df-fake-0033": "val",
+    "df-fake-0034": "val",
+    "df-fake-0035": "val",
+    "df-fake-0036": "test",
+    "df-fake-0037": "train",
+    "df-fake-0038": "train",
+    "df-fake-0039": "train",
+    "df-fake-0040": "train",
+    "df-fake-0041": "train",
+    "df-fake-0042": "train",
+    "df-fake-0043": "train",
+    "df-fake-0044": "train",
+    "df-fake-0045": "train",
+    "df-fake-0046": "train",
+    "df-fake-0047": "train",
+    "df-fake-0048": "val",
+    "df-fake-0049": "test",
+    "df-fake-0050": "test",
+    "df-fake-0051": "train",
+    "df-fake-0052": "train",
+    "df-fake-0053": "train",
+    "df-fake-0054": "test",
+    "df-fake-0055": "train",
+    "df-fake-0056": "train",
+    "df-fake-0057": "train",
+    "df-fake-0058": "train",
+    "df-fake-0059": "train",
+    "df-fake-0060": "train",
+    "df-fake-0061": "train",
+    "df-fake-0062": "train",
+    "df-fake-0063": "train",
+    "df-fake-0064": "train",
+    "df-fake-0065": "train",
+    "df-fake-0066": "val",
+    "df-fake-0067": "test",
+    "df-fake-0068": "test",
+    "df-fake-0069": "train",
+    "df-fake-0070": "train",
+    "df-fake-0071": "train",
+    "df-fake-0072": "train",
+    "df-fake-0073": "train",
+    "df-fake-0074": "val",
+    "df-fake-0075": "val",
+    "df-fake-0076": "train",
+    "df-fake-0077": "train",
+    "df-fake-0078": "train",
+    "df-fake-0079": "train",
+    "df-fake-0080": "train",
+    "df-fake-0081": "test",
+    "df-fake-0082": "val",
+    "df-fake-0083": "test",
+    "df-fake-0084": "train",
+    "df-fake-0085": "test",
+    "df-fake-0086": "train",
+    "df-fake-0087": "val",
+    "df-fake-0088": "train",
+    "df-fake-0089": "train",
+    "df-fake-0090": "train",
+    "df-fake-0091": "val",
+    "df-fake-0092": "train"
+  },
+  "perceptual_hash_algorithm": "average-hash-8x8-lanczos-v1",
+  "threshold_comparison": "inclusive-lte",
+  "component_algorithm_version": "all-pairs-union-find-v1",
+  "component_count": 328,
+  "edge_count": 134,
+  "singleton_component_count": 292,
+  "mixed_label_component_count": 5,
+  "multi_member_component_count": 36,
+  "largest_component_size": 36,
+  "component_fingerprint": "8a923d239aac342ecee2f18968b8597cff7a8513825bdb27f913449bf54ab6ff",
+  "component_by_group": {
+    "df-auth-0001": "component-4256fe88bf24f58d",
+    "df-auth-0002": "component-b753d08d68b6bc60",
+    "df-auth-0003": "component-76d944b524f8b10a",
+    "df-auth-0004": "component-0a580211097fae8f",
+    "df-auth-0005": "component-79c8d21b4b407e18",
+    "df-auth-0006": "component-299086f08d18afaa",
+    "df-auth-0007": "component-a546298e1f55b325",
+    "df-auth-0008": "component-99a538db9e40c777",
+    "df-auth-0009": "component-ae3b0aa96bb3268e",
+    "df-auth-0010": "component-c4f5a364b198fee2",
+    "df-auth-0011": "component-88991608ff3905a8",
+    "df-auth-0012": "component-00f70aed8bb074af",
+    "df-auth-0013": "component-299086f08d18afaa",
+    "df-auth-0014": "component-0a580211097fae8f",
+    "df-auth-0015": "component-656ac2cc4d0b3846",
+    "df-auth-0016": "component-d601dcaa68b4c1cd",
+    "df-auth-0017": "component-0a580211097fae8f",
+    "df-auth-0018": "component-755711dcfd9ef7c6",
+    "df-auth-0019": "component-8e850b0230946784",
+    "df-auth-0020": "component-a0c30f2b93b3d132",
+    "df-auth-0021": "component-b93a3b23d012e268",
+    "df-auth-0022": "component-11a3c4bbd6d25e7f",
+    "df-auth-0023": "component-6e874592d3ad433a",
+    "df-auth-0024": "component-e5ae89653414518c",
+    "df-auth-0025": "component-299086f08d18afaa",
+    "df-auth-0026": "component-08066e8db1b1e7ed",
+    "df-auth-0027": "component-d45eefd7ca340064",
+    "df-auth-0028": "component-22ffd267b2da1801",
+    "df-auth-0029": "component-22ffd267b2da1801",
+    "df-auth-0030": "component-dc7303eb0b872c5b",
+    "df-auth-0031": "component-99defd7c1c0cea36",
+    "df-auth-0032": "component-697c9dfed05c9b38",
+    "df-auth-0033": "component-a4973d839e0a5803",
+    "df-auth-0034": "component-b4566cac5cb1ec18",
+    "df-auth-0035": "component-36bf4fab1819ad82",
+    "df-auth-0036": "component-3017e2c7cfa6ec8d",
+    "df-auth-0037": "component-299086f08d18afaa",
+    "df-auth-0038": "component-299086f08d18afaa",
+    "df-auth-0039": "component-e96932a90e8ac966",
+    "df-auth-0040": "component-236dbf448477300c",
+    "df-auth-0041": "component-42b160aeb870e12b",
+    "df-auth-0042": "component-3a2d7e03c349660b",
+    "df-auth-0043": "component-c27615b4c75f3a2a",
+    "df-auth-0044": "component-0eeaa8d0e1aa22ee",
+    "df-auth-0045": "component-0a1b9c84ab50de26",
+    "df-auth-0046": "component-38dc3269efcd5517",
+    "df-auth-0047": "component-e20e473405eb13a1",
+    "df-auth-0048": "component-8feae17e7be66cc3",
+    "df-auth-0049": "component-abc5d3fc78682c0b",
+    "df-auth-0050": "component-299086f08d18afaa",
+    "df-auth-0051": "component-299086f08d18afaa",
+    "df-auth-0052": "component-299086f08d18afaa",
+    "df-auth-0053": "component-7c6c2657a90764c6",
+    "df-auth-0054": "component-e2b88307157151f3",
+    "df-auth-0055": "component-299086f08d18afaa",
+    "df-auth-0056": "component-3ba84ceda0e6f3bf",
+    "df-auth-0057": "component-aebe8070bc6b1d23",
+    "df-auth-0058": "component-8698a6ad020f9cee",
+    "df-auth-0059": "component-299086f08d18afaa",
+    "df-auth-0060": "component-9cda551f5f3a43fe",
+    "df-auth-0061": "component-7677711bd6bfb8ee",
+    "df-auth-0062": "component-7677711bd6bfb8ee",
+    "df-auth-0063": "component-00e0c17acb24ef38",
+    "df-auth-0064": "component-00e0c17acb24ef38",
+    "df-auth-0065": "component-681d27aa3ad63120",
+    "df-auth-0066": "component-299086f08d18afaa",
+    "df-auth-0067": "component-210935cd67637ab9",
+    "df-auth-0068": "component-6d9253accef7cbf2",
+    "df-auth-0069": "component-299086f08d18afaa",
+    "df-auth-0070": "component-cb165c366deebc91",
+    "df-auth-0071": "component-282c8b3706a95bd0",
+    "df-auth-0072": "component-f15b39690aff8048",
+    "df-auth-0073": "component-d14c5abb0d6c81e6",
+    "df-auth-0074": "component-0a580211097fae8f",
+    "df-auth-0075": "component-2008a63a935729b5",
+    "df-auth-0076": "component-2008a63a935729b5",
+    "df-auth-0077": "component-299086f08d18afaa",
+    "df-auth-0078": "component-299086f08d18afaa",
+    "df-auth-0079": "component-210935cd67637ab9",
+    "df-auth-0080": "component-a745c8616c3ea981",
+    "df-auth-0081": "component-03d9402b5a8f5fdc",
+    "df-auth-0082": "component-94cd6445a7cd9e97",
+    "df-auth-0083": "component-b622889c17b8711e",
+    "df-auth-0084": "component-e7f20a85f8a2366d",
+    "df-auth-0085": "component-53ee453a51a1859b",
+    "df-auth-0086": "component-299086f08d18afaa",
+    "df-auth-0087": "component-0a580211097fae8f",
+    "df-auth-0088": "component-299086f08d18afaa",
+    "df-auth-0089": "component-299086f08d18afaa",
+    "df-auth-0090": "component-78e3861af91f2d38",
+    "df-auth-0091": "component-299086f08d18afaa",
+    "df-auth-0092": "component-299086f08d18afaa",
+    "df-auth-0093": "component-0a580211097fae8f",
+    "df-auth-0094": "component-b622889c17b8711e",
+    "df-auth-0095": "component-38df9f5a8135d647",
+    "df-auth-0096": "component-210935cd67637ab9",
+    "df-auth-0097": "component-12a06ae8bdcd575f",
+    "df-auth-0098": "component-ea6870746aad7e3c",
+    "df-auth-0099": "component-f419cd5defb0e72d",
+    "df-auth-0100": "component-6a98d3e6b6fb7b22",
+    "df-auth-0101": "component-c5270d5d5a839f6b",
+    "df-auth-0102": "component-bb6127ee2f8155f8",
+    "df-auth-0103": "component-e768bbe776ca86cc",
+    "df-auth-0104": "component-824dfa91d4f3216e",
+    "df-auth-0105": "component-210935cd67637ab9",
+    "df-auth-0106": "component-c792b06f144759c1",
+    "df-auth-0107": "component-1754e262f36c936b",
+    "df-auth-0108": "component-c341ec2e3044564d",
+    "df-auth-0109": "component-63c1288e8685ebdd",
+    "df-auth-0110": "component-69579fb18312f6aa",
+    "df-auth-0111": "component-cac7f0e93a5195de",
+    "df-auth-0112": "component-0b23ca39cd7307d4",
+    "df-auth-0113": "component-cdb882296ac878b1",
+    "df-auth-0114": "component-6ac9b37fd0f4530d",
+    "df-auth-0115": "component-f97e0bf9e1e9a5f0",
+    "df-auth-0116": "component-898b8b4030a97242",
+    "df-auth-0117": "component-2c9cc736cc72a583",
+    "df-auth-0118": "component-f2a0b796bff6ecf8",
+    "df-auth-0119": "component-0684b040f13e4382",
+    "df-auth-0120": "component-9bc6b6f675cac116",
+    "df-auth-0121": "component-0fa747d45f8919c2",
+    "df-auth-0122": "component-13e60ab600beb693",
+    "df-auth-0123": "component-e685d5d03c6855c3",
+    "df-auth-0124": "component-fb193747ff96d3f3",
+    "df-auth-0125": "component-21e3f3dfb3983cb7",
+    "df-auth-0126": "component-df52ccb6e8c3eab8",
+    "df-auth-0127": "component-bcb3e170bb828ea9",
+    "df-auth-0128": "component-6561b5b213745701",
+    "df-auth-0129": "component-2098b1172d4cf5c3",
+    "df-auth-0130": "component-b7a1651a35f834e1",
+    "df-auth-0131": "component-1206ea9108a3f14a",
+    "df-auth-0132": "component-2008a63a935729b5",
+    "df-auth-0133": "component-b2280b51428e1380",
+    "df-auth-0134": "component-66e2cb468e11f967",
+    "df-auth-0135": "component-0980d11d26ad0170",
+    "df-auth-0136": "component-690de87489abe349",
+    "df-auth-0137": "component-9bb0823a57c10217",
+    "df-auth-0138": "component-1b79f5a55affd3d2",
+    "df-auth-0139": "component-25ed86f897c434f1",
+    "df-auth-0140": "component-48e9e34f2a303c30",
+    "df-auth-0141": "component-bfab72115e23405d",
+    "df-auth-0142": "component-8368aabab6a7b108",
+    "df-auth-0143": "component-b0b35ae93aa7f853",
+    "df-auth-0144": "component-f3610ced1493d72f",
+    "df-auth-0145": "component-a05a595f76fa96b8",
+    "df-auth-0146": "component-297bfbceb6d2a479",
+    "df-auth-0147": "component-10044f1b09c7003f",
+    "df-auth-0148": "component-687ce8060ccfca80",
+    "df-auth-0149": "component-c0dbad434eba728b",
+    "df-auth-0150": "component-265e1b06b551a18f",
+    "df-auth-0151": "component-0c33f483c44475ed",
+    "df-auth-0152": "component-2f961e0249ecdc00",
+    "df-auth-0153": "component-83cdf0f12bbd9850",
+    "df-auth-0154": "component-b9251980b3a471c6",
+    "df-auth-0155": "component-ea011868cda92062",
+    "df-auth-0156": "component-3ba4dcc6e14aa659",
+    "df-auth-0157": "component-90992b777aad0389",
+    "df-auth-0158": "component-2ffb6aebc5909271",
+    "df-auth-0159": "component-30aa1975face4ac7",
+    "df-auth-0160": "component-2d441f4c557d9d98",
+    "df-auth-0161": "component-c0b223e99e8875d7",
+    "df-auth-0162": "component-bf54a0e55bb94fcd",
+    "df-auth-0163": "component-a574c1eeb601c0e8",
+    "df-auth-0164": "component-708a45d6deb2081f",
+    "df-auth-0165": "component-12ce5d1019ee6310",
+    "df-auth-0166": "component-7518abc51001cd05",
+    "df-auth-0167": "component-32d724d3695ae387",
+    "df-auth-0168": "component-f85431d5cfd0bbea",
+    "df-auth-0169": "component-de35db2914e730fe",
+    "df-auth-0170": "component-4f2d1d64554c25bb",
+    "df-auth-0171": "component-7542936f468ba411",
+    "df-auth-0172": "component-b574e7463bb45221",
+    "df-auth-0173": "component-217c046869f404f6",
+    "df-auth-0174": "component-eba40cd05d435c44",
+    "df-auth-0175": "component-210cf347a535f3cd",
+    "df-auth-0176": "component-bd8ba7bf0ed9a85f",
+    "df-auth-0177": "component-e6b240ceeb00b078",
+    "df-auth-0178": "component-4141646f56f6d38e",
+    "df-auth-0179": "component-1c8ffa1bc561e53f",
+    "df-auth-0180": "component-40f503a76639cdda",
+    "df-auth-0181": "component-c899c13119782d51",
+    "df-auth-0182": "component-127fae2b5e612a80",
+    "df-auth-0183": "component-158925333acfef5c",
+    "df-auth-0184": "component-c62e9fe7c2483f63",
+    "df-auth-0185": "component-6ac9b37fd0f4530d",
+    "df-auth-0186": "component-4d6738e26b6c468e",
+    "df-auth-0187": "component-003f16cde872a68a",
+    "df-auth-0188": "component-1d39c40ac9012066",
+    "df-auth-0189": "component-2cd44d53984e91a6",
+    "df-auth-0190": "component-edd6db5e33b27edf",
+    "df-auth-0191": "component-55cb4b4acbede05a",
+    "df-auth-0192": "component-ed9b80085c0eb6be",
+    "df-auth-0193": "component-c3e8f6df140903da",
+    "df-auth-0194": "component-242985a49dbfe77d",
+    "df-auth-0195": "component-08066e8db1b1e7ed",
+    "df-auth-0196": "component-08066e8db1b1e7ed",
+    "df-auth-0197": "component-1d39c40ac9012066",
+    "df-auth-0198": "component-fca953e06235e084",
+    "df-auth-0199": "component-6ac9b37fd0f4530d",
+    "df-auth-0200": "component-fb3c182b471fc5a3",
+    "df-auth-0201": "component-acbc09d1422e9df1",
+    "df-auth-0202": "component-03e9f0b0885750a0",
+    "df-auth-0203": "component-03e9f0b0885750a0",
+    "df-auth-0204": "component-252436b394a747ab",
+    "df-auth-0205": "component-22ffd267b2da1801",
+    "df-auth-0206": "component-7a9b5940c8439efc",
+    "df-auth-0207": "component-8e8e60b12fc2bcaf",
+    "df-auth-0208": "component-fc76631eb5607618",
+    "df-auth-0209": "component-c4f5a364b198fee2",
+    "df-auth-0210": "component-87309c67e6e3cfe7",
+    "df-auth-0211": "component-88d1c8d6820ff06f",
+    "df-auth-0212": "component-65aa36e6f2ccd86a",
+    "df-auth-0213": "component-93a167508e681833",
+    "df-auth-0214": "component-30aa1975face4ac7",
+    "df-auth-0215": "component-2b2dabf44170a6de",
+    "df-auth-0216": "component-f344575f8e0288f6",
+    "df-auth-0217": "component-3c95f120ec63372a",
+    "df-auth-0218": "component-c5a53f7271f90b89",
+    "df-auth-0219": "component-403e555b78d7220f",
+    "df-auth-0220": "component-2b2dabf44170a6de",
+    "df-auth-0221": "component-1d0cfe8b6727cddb",
+    "df-auth-0222": "component-68c446d15887bfb8",
+    "df-auth-0223": "component-bd4af82aa8ee0031",
+    "df-auth-0224": "component-674daa51cc923f5c",
+    "df-auth-0225": "component-299086f08d18afaa",
+    "df-auth-0226": "component-bae19bf60d49760e",
+    "df-auth-0227": "component-f49413291241a737",
+    "df-auth-0228": "component-0a580211097fae8f",
+    "df-auth-0229": "component-299086f08d18afaa",
+    "df-auth-0230": "component-299086f08d18afaa",
+    "df-auth-0231": "component-299086f08d18afaa",
+    "df-auth-0232": "component-299086f08d18afaa",
+    "df-auth-0233": "component-003f16cde872a68a",
+    "df-auth-0234": "component-2ccc5db60c1e6b7b",
+    "df-auth-0235": "component-003f16cde872a68a",
+    "df-auth-0236": "component-2ccc5db60c1e6b7b",
+    "df-auth-0237": "component-2ccc5db60c1e6b7b",
+    "df-auth-0238": "component-99f086c593db162f",
+    "df-auth-0239": "component-21e3f3dfb3983cb7",
+    "df-auth-0240": "component-2ccc5db60c1e6b7b",
+    "df-auth-0241": "component-21e3f3dfb3983cb7",
+    "df-auth-0242": "component-22ffd267b2da1801",
+    "df-auth-0243": "component-eba40cd05d435c44",
+    "df-auth-0244": "component-2ccc5db60c1e6b7b",
+    "df-auth-0245": "component-8d6b19a053469611",
+    "df-auth-0246": "component-917dc36986ad99fc",
+    "df-auth-0247": "component-3a9ce2c831f0b0c1",
+    "df-auth-0248": "component-30aa1975face4ac7",
+    "df-auth-0249": "component-30aa1975face4ac7",
+    "df-auth-0250": "component-1c8cfde9108ad17a",
+    "df-auth-0251": "component-11f1b725933c2e12",
+    "df-auth-0252": "component-f6dc385f52c687b6",
+    "df-auth-0253": "component-c899c13119782d51",
+    "df-auth-0254": "component-1d39c40ac9012066",
+    "df-auth-0255": "component-1d39c40ac9012066",
+    "df-auth-0256": "component-76d944b524f8b10a",
+    "df-auth-0257": "component-4cb16b1bac3bf1f6",
+    "df-auth-0258": "component-8a0764296f5b07e1",
+    "df-auth-0259": "component-943b04ab8e61b8ff",
+    "df-auth-0260": "component-0a5a8b30f1266ba1",
+    "df-auth-0261": "component-f419cd5defb0e72d",
+    "df-auth-0262": "component-299086f08d18afaa",
+    "df-auth-0263": "component-299086f08d18afaa",
+    "df-auth-0264": "component-832670cd25082776",
+    "df-auth-0265": "component-5c84eaefc274a75d",
+    "df-auth-0266": "component-47cf28007d125509",
+    "df-auth-0267": "component-eb17301dab6db70b",
+    "df-auth-0268": "component-ca488d9a2d79dbdc",
+    "df-auth-0269": "component-d3387fb8ded63ed6",
+    "df-auth-0270": "component-4475263087045e99",
+    "df-auth-0271": "component-f58e49678eb6f08f",
+    "df-auth-0272": "component-fe01b611b5df00ad",
+    "df-auth-0273": "component-22691ba9996d9408",
+    "df-auth-0274": "component-b86828601d9640f7",
+    "df-auth-0275": "component-d7a41bd92ce83a31",
+    "df-auth-0276": "component-f344575f8e0288f6",
+    "df-auth-0277": "component-127fae2b5e612a80",
+    "df-auth-0278": "component-f004ff88a8bd3463",
+    "df-auth-0279": "component-7518abc51001cd05",
+    "df-auth-0280": "component-6202be9c7a15286d",
+    "df-auth-0281": "component-f344575f8e0288f6",
+    "df-auth-0282": "component-b7cd7498941e5c3f",
+    "df-auth-0283": "component-67d31c9747b9066c",
+    "df-auth-0284": "component-b7cd7498941e5c3f",
+    "df-auth-0285": "component-3b1435eabb40fcb9",
+    "df-auth-0286": "component-abc5d3fc78682c0b",
+    "df-auth-0287": "component-bf559102c0e71804",
+    "df-auth-0288": "component-bf559102c0e71804",
+    "df-auth-0289": "component-9cd838e09cf18eb3",
+    "df-auth-0290": "component-9c12f47523fa9464",
+    "df-auth-0291": "component-36bf4fab1819ad82",
+    "df-auth-0292": "component-e6f81f18aaf90aea",
+    "df-auth-0293": "component-ea3e28757481dc45",
+    "df-auth-0294": "component-971750ef8949d40c",
+    "df-auth-0295": "component-971750ef8949d40c",
+    "df-auth-0296": "component-971750ef8949d40c",
+    "df-auth-0297": "component-e708d39a91e63e22",
+    "df-auth-0298": "component-5c894fa2043231b2",
+    "df-auth-0299": "component-aab12ad27a2a8f56",
+    "df-auth-0300": "component-c0b0588d8cf25fad",
+    "df-auth-0301": "component-299086f08d18afaa",
+    "df-auth-0302": "component-299086f08d18afaa",
+    "df-auth-0303": "component-299086f08d18afaa",
+    "df-auth-0304": "component-299086f08d18afaa",
+    "df-auth-0305": "component-75768e03c9428d68",
+    "df-auth-0306": "component-299086f08d18afaa",
+    "df-auth-0307": "component-38ca177f522d3483",
+    "df-auth-0308": "component-158aaee9e0576c00",
+    "df-auth-0309": "component-204e45d587848533",
+    "df-auth-0310": "component-20e238f23390b6c7",
+    "df-auth-0311": "component-3b1435eabb40fcb9",
+    "df-auth-0312": "component-60fed244d00345a5",
+    "df-auth-0313": "component-3b1435eabb40fcb9",
+    "df-auth-0314": "component-fd63970d57030d1a",
+    "df-auth-0315": "component-fb61f87dce9c7d3c",
+    "df-auth-0316": "component-861b39adf9c7db3d",
+    "df-auth-0317": "component-ae18beb75a6d81a5",
+    "df-auth-0318": "component-9330cd17fdf36a79",
+    "df-auth-0319": "component-0b1b4552dbbba118",
+    "df-auth-0320": "component-8fe291331e07605b",
+    "df-auth-0321": "component-376c31127c51a6e0",
+    "df-auth-0322": "component-93b6fdfe73864781",
+    "df-auth-0323": "component-dbdb48518334ef42",
+    "df-auth-0324": "component-299086f08d18afaa",
+    "df-auth-0325": "component-0a580211097fae8f",
+    "df-auth-0326": "component-5c0685528e92492a",
+    "df-auth-0327": "component-adb1b8dace761a63",
+    "df-auth-0328": "component-a20bd709d0f8eed4",
+    "df-auth-0329": "component-1a5c7ca4aca8888f",
+    "df-auth-0330": "component-066000bebd6e6f1e",
+    "df-auth-0331": "component-2ab319a89bf9e73b",
+    "df-auth-0332": "component-8f3b9737fcaf15ba",
+    "df-auth-0333": "component-c75f3704a30e86ba",
+    "df-auth-0334": "component-ad8399941766d797",
+    "df-auth-0335": "component-3a0e8a030c3e3c88",
+    "df-fake-0001": "component-1d0cbeccd89c4c59",
+    "df-fake-0002": "component-42a3d17c85bc4145",
+    "df-fake-0003": "component-bbe403597aef079e",
+    "df-fake-0004": "component-a3467564653ff551",
+    "df-fake-0005": "component-1042960a85bf7ab1",
+    "df-fake-0006": "component-32617c400366be7e",
+    "df-fake-0007": "component-f1966fe558d1bd1a",
+    "df-fake-0008": "component-58a1aa81146e2f03",
+    "df-fake-0009": "component-b97c125b282632a2",
+    "df-fake-0010": "component-b040d3568a2deebc",
+    "df-fake-0011": "component-4a66d88d7c6d42b3",
+    "df-fake-0012": "component-00f70aed8bb074af",
+    "df-fake-0013": "component-bed52f4b95152016",
+    "df-fake-0014": "component-30aa1975face4ac7",
+    "df-fake-0015": "component-648a834169f13f7a",
+    "df-fake-0016": "component-b433ae6f06109848",
+    "df-fake-0017": "component-293353e87a3064c8",
+    "df-fake-0018": "component-b669922a05d48227",
+    "df-fake-0019": "component-4e32d6520e61b533",
+    "df-fake-0020": "component-890594dab902c880",
+    "df-fake-0021": "component-8adafe84468449c7",
+    "df-fake-0022": "component-797f8331f06eb3e7",
+    "df-fake-0023": "component-480cb3e927e6eddf",
+    "df-fake-0024": "component-cc0fae60e3832c1a",
+    "df-fake-0025": "component-0295dc9c9e424397",
+    "df-fake-0026": "component-d0414a988d6705c6",
+    "df-fake-0027": "component-40c5e72af6e301bd",
+    "df-fake-0028": "component-a5d367155200a52b",
+    "df-fake-0029": "component-f684b247555bf0c6",
+    "df-fake-0030": "component-ca3867cad6e44fff",
+    "df-fake-0031": "component-a3467564653ff551",
+    "df-fake-0032": "component-776b1822850bf984",
+    "df-fake-0033": "component-141ba7dc17cae4ca",
+    "df-fake-0034": "component-b6c83e3137b21b03",
+    "df-fake-0035": "component-40c5e72af6e301bd",
+    "df-fake-0036": "component-9e954656a5ccf2be",
+    "df-fake-0037": "component-30aa1975face4ac7",
+    "df-fake-0038": "component-30aa1975face4ac7",
+    "df-fake-0039": "component-fd38799d3d5b0a4e",
+    "df-fake-0040": "component-c3e8f6df140903da",
+    "df-fake-0041": "component-c24f429250c0997f",
+    "df-fake-0042": "component-cc6b407966c1aebd",
+    "df-fake-0043": "component-0059124f9c152a0b",
+    "df-fake-0044": "component-3235d6500a423892",
+    "df-fake-0045": "component-bd197a4f6d75cae8",
+    "df-fake-0046": "component-be65cafb21f3cbe9",
+    "df-fake-0047": "component-57392214671c50b0",
+    "df-fake-0048": "component-6feb8928fc43c47a",
+    "df-fake-0049": "component-ca3867cad6e44fff",
+    "df-fake-0050": "component-1377c78b3e37d7a7",
+    "df-fake-0051": "component-45b88cb38c3b7910",
+    "df-fake-0052": "component-c104b3a775bd8a63",
+    "df-fake-0053": "component-25a4a834f9ba86c6",
+    "df-fake-0054": "component-e28ab317880f3d9a",
+    "df-fake-0055": "component-5790baf9e04d5f68",
+    "df-fake-0056": "component-25e179d84b100ff5",
+    "df-fake-0057": "component-5b0f6aab7dd6a72e",
+    "df-fake-0058": "component-ce5ce89cbd11230e",
+    "df-fake-0059": "component-0f037a094236508a",
+    "df-fake-0060": "component-d08e0ec95fc496a4",
+    "df-fake-0061": "component-823df784ee1facff",
+    "df-fake-0062": "component-dc4dc541e4418186",
+    "df-fake-0063": "component-ff419510dbde6e5b",
+    "df-fake-0064": "component-6f314c2fba0d175c",
+    "df-fake-0065": "component-651dc336cb1a5dd2",
+    "df-fake-0066": "component-fe4cdd150fe68651",
+    "df-fake-0067": "component-41d5d03ff12380c1",
+    "df-fake-0068": "component-e2f56b956d897f77",
+    "df-fake-0069": "component-299086f08d18afaa",
+    "df-fake-0070": "component-299086f08d18afaa",
+    "df-fake-0071": "component-1f948bf4c742a0ff",
+    "df-fake-0072": "component-8abdd4ba6206ac2f",
+    "df-fake-0073": "component-de74156ba878639c",
+    "df-fake-0074": "component-b9751ed258e0938d",
+    "df-fake-0075": "component-cfd77a99baeda695",
+    "df-fake-0076": "component-dd2407405609687b",
+    "df-fake-0077": "component-337c5cdbb2929d9e",
+    "df-fake-0078": "component-fad6d3ce3783e3d1",
+    "df-fake-0079": "component-d4feaba8081a48b4",
+    "df-fake-0080": "component-2371cbb79d64f0b7",
+    "df-fake-0081": "component-3fb3476f39d7cd37",
+    "df-fake-0082": "component-374f5c09b888e0c6",
+    "df-fake-0083": "component-770af48770950aee",
+    "df-fake-0084": "component-ee96b24fd89be029",
+    "df-fake-0085": "component-7677711bd6bfb8ee",
+    "df-fake-0086": "component-299086f08d18afaa",
+    "df-fake-0087": "component-31dbab0ad698b1f0",
+    "df-fake-0088": "component-1f9d82a1899e734f",
+    "df-fake-0089": "component-6f476ad3254b09c5",
+    "df-fake-0090": "component-299086f08d18afaa",
+    "df-fake-0091": "component-35ed1bbe797d1a70",
+    "df-fake-0092": "component-ad1374044a21554e"
+  },
+  "component_sizes": {
+    "component-003f16cde872a68a": 3,
+    "component-0059124f9c152a0b": 1,
+    "component-00e0c17acb24ef38": 2,
+    "component-00f70aed8bb074af": 2,
+    "component-0295dc9c9e424397": 1,
+    "component-03d9402b5a8f5fdc": 1,
+    "component-03e9f0b0885750a0": 2,
+    "component-066000bebd6e6f1e": 1,
+    "component-0684b040f13e4382": 1,
+    "component-08066e8db1b1e7ed": 3,
+    "component-0980d11d26ad0170": 1,
+    "component-0a1b9c84ab50de26": 1,
+    "component-0a580211097fae8f": 8,
+    "component-0a5a8b30f1266ba1": 1,
+    "component-0b1b4552dbbba118": 1,
+    "component-0b23ca39cd7307d4": 1,
+    "component-0c33f483c44475ed": 1,
+    "component-0eeaa8d0e1aa22ee": 1,
+    "component-0f037a094236508a": 1,
+    "component-0fa747d45f8919c2": 1,
+    "component-10044f1b09c7003f": 1,
+    "component-1042960a85bf7ab1": 1,
+    "component-11a3c4bbd6d25e7f": 1,
+    "component-11f1b725933c2e12": 1,
+    "component-1206ea9108a3f14a": 1,
+    "component-127fae2b5e612a80": 2,
+    "component-12a06ae8bdcd575f": 1,
+    "component-12ce5d1019ee6310": 1,
+    "component-1377c78b3e37d7a7": 1,
+    "component-13e60ab600beb693": 1,
+    "component-141ba7dc17cae4ca": 1,
+    "component-158925333acfef5c": 1,
+    "component-158aaee9e0576c00": 1,
+    "component-1754e262f36c936b": 1,
+    "component-1a5c7ca4aca8888f": 1,
+    "component-1b79f5a55affd3d2": 1,
+    "component-1c8cfde9108ad17a": 1,
+    "component-1c8ffa1bc561e53f": 1,
+    "component-1d0cbeccd89c4c59": 1,
+    "component-1d0cfe8b6727cddb": 1,
+    "component-1d39c40ac9012066": 4,
+    "component-1f948bf4c742a0ff": 1,
+    "component-1f9d82a1899e734f": 1,
+    "component-2008a63a935729b5": 3,
+    "component-204e45d587848533": 1,
+    "component-2098b1172d4cf5c3": 1,
+    "component-20e238f23390b6c7": 1,
+    "component-210935cd67637ab9": 4,
+    "component-210cf347a535f3cd": 1,
+    "component-217c046869f404f6": 1,
+    "component-21e3f3dfb3983cb7": 3,
+    "component-22691ba9996d9408": 1,
+    "component-22ffd267b2da1801": 4,
+    "component-236dbf448477300c": 1,
+    "component-2371cbb79d64f0b7": 1,
+    "component-242985a49dbfe77d": 1,
+    "component-252436b394a747ab": 1,
+    "component-25a4a834f9ba86c6": 1,
+    "component-25e179d84b100ff5": 1,
+    "component-25ed86f897c434f1": 1,
+    "component-265e1b06b551a18f": 1,
+    "component-282c8b3706a95bd0": 1,
+    "component-293353e87a3064c8": 1,
+    "component-297bfbceb6d2a479": 1,
+    "component-299086f08d18afaa": 36,
+    "component-2ab319a89bf9e73b": 1,
+    "component-2b2dabf44170a6de": 2,
+    "component-2c9cc736cc72a583": 1,
+    "component-2ccc5db60c1e6b7b": 5,
+    "component-2cd44d53984e91a6": 1,
+    "component-2d441f4c557d9d98": 1,
+    "component-2f961e0249ecdc00": 1,
+    "component-2ffb6aebc5909271": 1,
+    "component-3017e2c7cfa6ec8d": 1,
+    "component-30aa1975face4ac7": 7,
+    "component-31dbab0ad698b1f0": 1,
+    "component-3235d6500a423892": 1,
+    "component-32617c400366be7e": 1,
+    "component-32d724d3695ae387": 1,
+    "component-337c5cdbb2929d9e": 1,
+    "component-35ed1bbe797d1a70": 1,
+    "component-36bf4fab1819ad82": 2,
+    "component-374f5c09b888e0c6": 1,
+    "component-376c31127c51a6e0": 1,
+    "component-38ca177f522d3483": 1,
+    "component-38dc3269efcd5517": 1,
+    "component-38df9f5a8135d647": 1,
+    "component-3a0e8a030c3e3c88": 1,
+    "component-3a2d7e03c349660b": 1,
+    "component-3a9ce2c831f0b0c1": 1,
+    "component-3b1435eabb40fcb9": 3,
+    "component-3ba4dcc6e14aa659": 1,
+    "component-3ba84ceda0e6f3bf": 1,
+    "component-3c95f120ec63372a": 1,
+    "component-3fb3476f39d7cd37": 1,
+    "component-403e555b78d7220f": 1,
+    "component-40c5e72af6e301bd": 2,
+    "component-40f503a76639cdda": 1,
+    "component-4141646f56f6d38e": 1,
+    "component-41d5d03ff12380c1": 1,
+    "component-4256fe88bf24f58d": 1,
+    "component-42a3d17c85bc4145": 1,
+    "component-42b160aeb870e12b": 1,
+    "component-4475263087045e99": 1,
+    "component-45b88cb38c3b7910": 1,
+    "component-47cf28007d125509": 1,
+    "component-480cb3e927e6eddf": 1,
+    "component-48e9e34f2a303c30": 1,
+    "component-4a66d88d7c6d42b3": 1,
+    "component-4cb16b1bac3bf1f6": 1,
+    "component-4d6738e26b6c468e": 1,
+    "component-4e32d6520e61b533": 1,
+    "component-4f2d1d64554c25bb": 1,
+    "component-53ee453a51a1859b": 1,
+    "component-55cb4b4acbede05a": 1,
+    "component-57392214671c50b0": 1,
+    "component-5790baf9e04d5f68": 1,
+    "component-58a1aa81146e2f03": 1,
+    "component-5b0f6aab7dd6a72e": 1,
+    "component-5c0685528e92492a": 1,
+    "component-5c84eaefc274a75d": 1,
+    "component-5c894fa2043231b2": 1,
+    "component-60fed244d00345a5": 1,
+    "component-6202be9c7a15286d": 1,
+    "component-63c1288e8685ebdd": 1,
+    "component-648a834169f13f7a": 1,
+    "component-651dc336cb1a5dd2": 1,
+    "component-6561b5b213745701": 1,
+    "component-656ac2cc4d0b3846": 1,
+    "component-65aa36e6f2ccd86a": 1,
+    "component-66e2cb468e11f967": 1,
+    "component-674daa51cc923f5c": 1,
+    "component-67d31c9747b9066c": 1,
+    "component-681d27aa3ad63120": 1,
+    "component-687ce8060ccfca80": 1,
+    "component-68c446d15887bfb8": 1,
+    "component-690de87489abe349": 1,
+    "component-69579fb18312f6aa": 1,
+    "component-697c9dfed05c9b38": 1,
+    "component-6a98d3e6b6fb7b22": 1,
+    "component-6ac9b37fd0f4530d": 3,
+    "component-6d9253accef7cbf2": 1,
+    "component-6e874592d3ad433a": 1,
+    "component-6f314c2fba0d175c": 1,
+    "component-6f476ad3254b09c5": 1,
+    "component-6feb8928fc43c47a": 1,
+    "component-708a45d6deb2081f": 1,
+    "component-7518abc51001cd05": 2,
+    "component-7542936f468ba411": 1,
+    "component-755711dcfd9ef7c6": 1,
+    "component-75768e03c9428d68": 1,
+    "component-7677711bd6bfb8ee": 3,
+    "component-76d944b524f8b10a": 2,
+    "component-770af48770950aee": 1,
+    "component-776b1822850bf984": 1,
+    "component-78e3861af91f2d38": 1,
+    "component-797f8331f06eb3e7": 1,
+    "component-79c8d21b4b407e18": 1,
+    "component-7a9b5940c8439efc": 1,
+    "component-7c6c2657a90764c6": 1,
+    "component-823df784ee1facff": 1,
+    "component-824dfa91d4f3216e": 1,
+    "component-832670cd25082776": 1,
+    "component-8368aabab6a7b108": 1,
+    "component-83cdf0f12bbd9850": 1,
+    "component-861b39adf9c7db3d": 1,
+    "component-8698a6ad020f9cee": 1,
+    "component-87309c67e6e3cfe7": 1,
+    "component-88991608ff3905a8": 1,
+    "component-88d1c8d6820ff06f": 1,
+    "component-890594dab902c880": 1,
+    "component-898b8b4030a97242": 1,
+    "component-8a0764296f5b07e1": 1,
+    "component-8abdd4ba6206ac2f": 1,
+    "component-8adafe84468449c7": 1,
+    "component-8d6b19a053469611": 1,
+    "component-8e850b0230946784": 1,
+    "component-8e8e60b12fc2bcaf": 1,
+    "component-8f3b9737fcaf15ba": 1,
+    "component-8fe291331e07605b": 1,
+    "component-8feae17e7be66cc3": 1,
+    "component-90992b777aad0389": 1,
+    "component-917dc36986ad99fc": 1,
+    "component-9330cd17fdf36a79": 1,
+    "component-93a167508e681833": 1,
+    "component-93b6fdfe73864781": 1,
+    "component-943b04ab8e61b8ff": 1,
+    "component-94cd6445a7cd9e97": 1,
+    "component-971750ef8949d40c": 3,
+    "component-99a538db9e40c777": 1,
+    "component-99defd7c1c0cea36": 1,
+    "component-99f086c593db162f": 1,
+    "component-9bb0823a57c10217": 1,
+    "component-9bc6b6f675cac116": 1,
+    "component-9c12f47523fa9464": 1,
+    "component-9cd838e09cf18eb3": 1,
+    "component-9cda551f5f3a43fe": 1,
+    "component-9e954656a5ccf2be": 1,
+    "component-a05a595f76fa96b8": 1,
+    "component-a0c30f2b93b3d132": 1,
+    "component-a20bd709d0f8eed4": 1,
+    "component-a3467564653ff551": 2,
+    "component-a4973d839e0a5803": 1,
+    "component-a546298e1f55b325": 1,
+    "component-a574c1eeb601c0e8": 1,
+    "component-a5d367155200a52b": 1,
+    "component-a745c8616c3ea981": 1,
+    "component-aab12ad27a2a8f56": 1,
+    "component-abc5d3fc78682c0b": 2,
+    "component-acbc09d1422e9df1": 1,
+    "component-ad1374044a21554e": 1,
+    "component-ad8399941766d797": 1,
+    "component-adb1b8dace761a63": 1,
+    "component-ae18beb75a6d81a5": 1,
+    "component-ae3b0aa96bb3268e": 1,
+    "component-aebe8070bc6b1d23": 1,
+    "component-b040d3568a2deebc": 1,
+    "component-b0b35ae93aa7f853": 1,
+    "component-b2280b51428e1380": 1,
+    "component-b433ae6f06109848": 1,
+    "component-b4566cac5cb1ec18": 1,
+    "component-b574e7463bb45221": 1,
+    "component-b622889c17b8711e": 2,
+    "component-b669922a05d48227": 1,
+    "component-b6c83e3137b21b03": 1,
+    "component-b753d08d68b6bc60": 1,
+    "component-b7a1651a35f834e1": 1,
+    "component-b7cd7498941e5c3f": 2,
+    "component-b86828601d9640f7": 1,
+    "component-b9251980b3a471c6": 1,
+    "component-b93a3b23d012e268": 1,
+    "component-b9751ed258e0938d": 1,
+    "component-b97c125b282632a2": 1,
+    "component-bae19bf60d49760e": 1,
+    "component-bb6127ee2f8155f8": 1,
+    "component-bbe403597aef079e": 1,
+    "component-bcb3e170bb828ea9": 1,
+    "component-bd197a4f6d75cae8": 1,
+    "component-bd4af82aa8ee0031": 1,
+    "component-bd8ba7bf0ed9a85f": 1,
+    "component-be65cafb21f3cbe9": 1,
+    "component-bed52f4b95152016": 1,
+    "component-bf54a0e55bb94fcd": 1,
+    "component-bf559102c0e71804": 2,
+    "component-bfab72115e23405d": 1,
+    "component-c0b0588d8cf25fad": 1,
+    "component-c0b223e99e8875d7": 1,
+    "component-c0dbad434eba728b": 1,
+    "component-c104b3a775bd8a63": 1,
+    "component-c24f429250c0997f": 1,
+    "component-c27615b4c75f3a2a": 1,
+    "component-c341ec2e3044564d": 1,
+    "component-c3e8f6df140903da": 2,
+    "component-c4f5a364b198fee2": 2,
+    "component-c5270d5d5a839f6b": 1,
+    "component-c5a53f7271f90b89": 1,
+    "component-c62e9fe7c2483f63": 1,
+    "component-c75f3704a30e86ba": 1,
+    "component-c792b06f144759c1": 1,
+    "component-c899c13119782d51": 2,
+    "component-ca3867cad6e44fff": 2,
+    "component-ca488d9a2d79dbdc": 1,
+    "component-cac7f0e93a5195de": 1,
+    "component-cb165c366deebc91": 1,
+    "component-cc0fae60e3832c1a": 1,
+    "component-cc6b407966c1aebd": 1,
+    "component-cdb882296ac878b1": 1,
+    "component-ce5ce89cbd11230e": 1,
+    "component-cfd77a99baeda695": 1,
+    "component-d0414a988d6705c6": 1,
+    "component-d08e0ec95fc496a4": 1,
+    "component-d14c5abb0d6c81e6": 1,
+    "component-d3387fb8ded63ed6": 1,
+    "component-d45eefd7ca340064": 1,
+    "component-d4feaba8081a48b4": 1,
+    "component-d601dcaa68b4c1cd": 1,
+    "component-d7a41bd92ce83a31": 1,
+    "component-dbdb48518334ef42": 1,
+    "component-dc4dc541e4418186": 1,
+    "component-dc7303eb0b872c5b": 1,
+    "component-dd2407405609687b": 1,
+    "component-de35db2914e730fe": 1,
+    "component-de74156ba878639c": 1,
+    "component-df52ccb6e8c3eab8": 1,
+    "component-e20e473405eb13a1": 1,
+    "component-e28ab317880f3d9a": 1,
+    "component-e2b88307157151f3": 1,
+    "component-e2f56b956d897f77": 1,
+    "component-e5ae89653414518c": 1,
+    "component-e685d5d03c6855c3": 1,
+    "component-e6b240ceeb00b078": 1,
+    "component-e6f81f18aaf90aea": 1,
+    "component-e708d39a91e63e22": 1,
+    "component-e768bbe776ca86cc": 1,
+    "component-e7f20a85f8a2366d": 1,
+    "component-e96932a90e8ac966": 1,
+    "component-ea011868cda92062": 1,
+    "component-ea3e28757481dc45": 1,
+    "component-ea6870746aad7e3c": 1,
+    "component-eb17301dab6db70b": 1,
+    "component-eba40cd05d435c44": 2,
+    "component-ed9b80085c0eb6be": 1,
+    "component-edd6db5e33b27edf": 1,
+    "component-ee96b24fd89be029": 1,
+    "component-f004ff88a8bd3463": 1,
+    "component-f15b39690aff8048": 1,
+    "component-f1966fe558d1bd1a": 1,
+    "component-f2a0b796bff6ecf8": 1,
+    "component-f344575f8e0288f6": 3,
+    "component-f3610ced1493d72f": 1,
+    "component-f419cd5defb0e72d": 2,
+    "component-f49413291241a737": 1,
+    "component-f58e49678eb6f08f": 1,
+    "component-f684b247555bf0c6": 1,
+    "component-f6dc385f52c687b6": 1,
+    "component-f85431d5cfd0bbea": 1,
+    "component-f97e0bf9e1e9a5f0": 1,
+    "component-fad6d3ce3783e3d1": 1,
+    "component-fb193747ff96d3f3": 1,
+    "component-fb3c182b471fc5a3": 1,
+    "component-fb61f87dce9c7d3c": 1,
+    "component-fc76631eb5607618": 1,
+    "component-fca953e06235e084": 1,
+    "component-fd38799d3d5b0a4e": 1,
+    "component-fd63970d57030d1a": 1,
+    "component-fe01b611b5df00ad": 1,
+    "component-fe4cdd150fe68651": 1,
+    "component-ff419510dbde6e5b": 1
+  },
+  "component_label_counts": {
+    "component-003f16cde872a68a": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-0059124f9c152a0b": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-00e0c17acb24ef38": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-00f70aed8bb074af": {
+      "authentic": 1,
+      "counterfeit": 1
+    },
+    "component-0295dc9c9e424397": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-03d9402b5a8f5fdc": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-03e9f0b0885750a0": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-066000bebd6e6f1e": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0684b040f13e4382": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-08066e8db1b1e7ed": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-0980d11d26ad0170": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0a1b9c84ab50de26": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0a580211097fae8f": {
+      "authentic": 8,
+      "counterfeit": 0
+    },
+    "component-0a5a8b30f1266ba1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0b1b4552dbbba118": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0b23ca39cd7307d4": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0c33f483c44475ed": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0eeaa8d0e1aa22ee": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-0f037a094236508a": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-0fa747d45f8919c2": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-10044f1b09c7003f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1042960a85bf7ab1": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-11a3c4bbd6d25e7f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-11f1b725933c2e12": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1206ea9108a3f14a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-127fae2b5e612a80": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-12a06ae8bdcd575f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-12ce5d1019ee6310": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1377c78b3e37d7a7": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-13e60ab600beb693": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-141ba7dc17cae4ca": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-158925333acfef5c": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-158aaee9e0576c00": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1754e262f36c936b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1a5c7ca4aca8888f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1b79f5a55affd3d2": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1c8cfde9108ad17a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1c8ffa1bc561e53f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1d0cbeccd89c4c59": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-1d0cfe8b6727cddb": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-1d39c40ac9012066": {
+      "authentic": 4,
+      "counterfeit": 0
+    },
+    "component-1f948bf4c742a0ff": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-1f9d82a1899e734f": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-2008a63a935729b5": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-204e45d587848533": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-2098b1172d4cf5c3": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-20e238f23390b6c7": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-210935cd67637ab9": {
+      "authentic": 4,
+      "counterfeit": 0
+    },
+    "component-210cf347a535f3cd": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-217c046869f404f6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-21e3f3dfb3983cb7": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-22691ba9996d9408": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-22ffd267b2da1801": {
+      "authentic": 4,
+      "counterfeit": 0
+    },
+    "component-236dbf448477300c": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-2371cbb79d64f0b7": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-242985a49dbfe77d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-252436b394a747ab": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-25a4a834f9ba86c6": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-25e179d84b100ff5": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-25ed86f897c434f1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-265e1b06b551a18f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-282c8b3706a95bd0": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-293353e87a3064c8": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-297bfbceb6d2a479": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-299086f08d18afaa": {
+      "authentic": 32,
+      "counterfeit": 4
+    },
+    "component-2ab319a89bf9e73b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-2b2dabf44170a6de": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-2c9cc736cc72a583": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-2ccc5db60c1e6b7b": {
+      "authentic": 5,
+      "counterfeit": 0
+    },
+    "component-2cd44d53984e91a6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-2d441f4c557d9d98": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-2f961e0249ecdc00": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-2ffb6aebc5909271": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3017e2c7cfa6ec8d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-30aa1975face4ac7": {
+      "authentic": 4,
+      "counterfeit": 3
+    },
+    "component-31dbab0ad698b1f0": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-3235d6500a423892": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-32617c400366be7e": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-32d724d3695ae387": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-337c5cdbb2929d9e": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-35ed1bbe797d1a70": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-36bf4fab1819ad82": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-374f5c09b888e0c6": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-376c31127c51a6e0": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-38ca177f522d3483": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-38dc3269efcd5517": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-38df9f5a8135d647": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3a0e8a030c3e3c88": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3a2d7e03c349660b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3a9ce2c831f0b0c1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3b1435eabb40fcb9": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-3ba4dcc6e14aa659": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3ba84ceda0e6f3bf": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3c95f120ec63372a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-3fb3476f39d7cd37": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-403e555b78d7220f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-40c5e72af6e301bd": {
+      "authentic": 0,
+      "counterfeit": 2
+    },
+    "component-40f503a76639cdda": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-4141646f56f6d38e": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-41d5d03ff12380c1": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-4256fe88bf24f58d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-42a3d17c85bc4145": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-42b160aeb870e12b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-4475263087045e99": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-45b88cb38c3b7910": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-47cf28007d125509": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-480cb3e927e6eddf": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-48e9e34f2a303c30": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-4a66d88d7c6d42b3": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-4cb16b1bac3bf1f6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-4d6738e26b6c468e": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-4e32d6520e61b533": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-4f2d1d64554c25bb": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-53ee453a51a1859b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-55cb4b4acbede05a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-57392214671c50b0": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-5790baf9e04d5f68": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-58a1aa81146e2f03": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-5b0f6aab7dd6a72e": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-5c0685528e92492a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-5c84eaefc274a75d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-5c894fa2043231b2": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-60fed244d00345a5": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-6202be9c7a15286d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-63c1288e8685ebdd": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-648a834169f13f7a": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-651dc336cb1a5dd2": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-6561b5b213745701": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-656ac2cc4d0b3846": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-65aa36e6f2ccd86a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-66e2cb468e11f967": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-674daa51cc923f5c": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-67d31c9747b9066c": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-681d27aa3ad63120": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-687ce8060ccfca80": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-68c446d15887bfb8": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-690de87489abe349": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-69579fb18312f6aa": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-697c9dfed05c9b38": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-6a98d3e6b6fb7b22": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-6ac9b37fd0f4530d": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-6d9253accef7cbf2": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-6e874592d3ad433a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-6f314c2fba0d175c": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-6f476ad3254b09c5": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-6feb8928fc43c47a": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-708a45d6deb2081f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-7518abc51001cd05": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-7542936f468ba411": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-755711dcfd9ef7c6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-75768e03c9428d68": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-7677711bd6bfb8ee": {
+      "authentic": 2,
+      "counterfeit": 1
+    },
+    "component-76d944b524f8b10a": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-770af48770950aee": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-776b1822850bf984": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-78e3861af91f2d38": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-797f8331f06eb3e7": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-79c8d21b4b407e18": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-7a9b5940c8439efc": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-7c6c2657a90764c6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-823df784ee1facff": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-824dfa91d4f3216e": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-832670cd25082776": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8368aabab6a7b108": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-83cdf0f12bbd9850": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-861b39adf9c7db3d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8698a6ad020f9cee": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-87309c67e6e3cfe7": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-88991608ff3905a8": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-88d1c8d6820ff06f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-890594dab902c880": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-898b8b4030a97242": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8a0764296f5b07e1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8abdd4ba6206ac2f": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-8adafe84468449c7": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-8d6b19a053469611": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8e850b0230946784": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8e8e60b12fc2bcaf": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8f3b9737fcaf15ba": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8fe291331e07605b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-8feae17e7be66cc3": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-90992b777aad0389": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-917dc36986ad99fc": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-9330cd17fdf36a79": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-93a167508e681833": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-93b6fdfe73864781": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-943b04ab8e61b8ff": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-94cd6445a7cd9e97": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-971750ef8949d40c": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-99a538db9e40c777": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-99defd7c1c0cea36": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-99f086c593db162f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-9bb0823a57c10217": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-9bc6b6f675cac116": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-9c12f47523fa9464": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-9cd838e09cf18eb3": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-9cda551f5f3a43fe": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-9e954656a5ccf2be": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-a05a595f76fa96b8": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-a0c30f2b93b3d132": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-a20bd709d0f8eed4": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-a3467564653ff551": {
+      "authentic": 0,
+      "counterfeit": 2
+    },
+    "component-a4973d839e0a5803": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-a546298e1f55b325": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-a574c1eeb601c0e8": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-a5d367155200a52b": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-a745c8616c3ea981": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-aab12ad27a2a8f56": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-abc5d3fc78682c0b": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-acbc09d1422e9df1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ad1374044a21554e": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-ad8399941766d797": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-adb1b8dace761a63": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ae18beb75a6d81a5": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ae3b0aa96bb3268e": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-aebe8070bc6b1d23": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b040d3568a2deebc": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-b0b35ae93aa7f853": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b2280b51428e1380": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b433ae6f06109848": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-b4566cac5cb1ec18": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b574e7463bb45221": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b622889c17b8711e": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-b669922a05d48227": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-b6c83e3137b21b03": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-b753d08d68b6bc60": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b7a1651a35f834e1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b7cd7498941e5c3f": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-b86828601d9640f7": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b9251980b3a471c6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b93a3b23d012e268": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-b9751ed258e0938d": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-b97c125b282632a2": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-bae19bf60d49760e": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-bb6127ee2f8155f8": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-bbe403597aef079e": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-bcb3e170bb828ea9": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-bd197a4f6d75cae8": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-bd4af82aa8ee0031": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-bd8ba7bf0ed9a85f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-be65cafb21f3cbe9": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-bed52f4b95152016": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-bf54a0e55bb94fcd": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-bf559102c0e71804": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-bfab72115e23405d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c0b0588d8cf25fad": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c0b223e99e8875d7": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c0dbad434eba728b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c104b3a775bd8a63": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-c24f429250c0997f": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-c27615b4c75f3a2a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c341ec2e3044564d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c3e8f6df140903da": {
+      "authentic": 1,
+      "counterfeit": 1
+    },
+    "component-c4f5a364b198fee2": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-c5270d5d5a839f6b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c5a53f7271f90b89": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c62e9fe7c2483f63": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c75f3704a30e86ba": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c792b06f144759c1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-c899c13119782d51": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-ca3867cad6e44fff": {
+      "authentic": 0,
+      "counterfeit": 2
+    },
+    "component-ca488d9a2d79dbdc": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-cac7f0e93a5195de": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-cb165c366deebc91": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-cc0fae60e3832c1a": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-cc6b407966c1aebd": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-cdb882296ac878b1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ce5ce89cbd11230e": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-cfd77a99baeda695": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-d0414a988d6705c6": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-d08e0ec95fc496a4": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-d14c5abb0d6c81e6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-d3387fb8ded63ed6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-d45eefd7ca340064": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-d4feaba8081a48b4": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-d601dcaa68b4c1cd": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-d7a41bd92ce83a31": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-dbdb48518334ef42": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-dc4dc541e4418186": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-dc7303eb0b872c5b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-dd2407405609687b": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-de35db2914e730fe": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-de74156ba878639c": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-df52ccb6e8c3eab8": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e20e473405eb13a1": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e28ab317880f3d9a": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-e2b88307157151f3": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e2f56b956d897f77": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-e5ae89653414518c": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e685d5d03c6855c3": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e6b240ceeb00b078": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e6f81f18aaf90aea": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e708d39a91e63e22": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e768bbe776ca86cc": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e7f20a85f8a2366d": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-e96932a90e8ac966": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ea011868cda92062": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ea3e28757481dc45": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ea6870746aad7e3c": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-eb17301dab6db70b": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-eba40cd05d435c44": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-ed9b80085c0eb6be": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-edd6db5e33b27edf": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-ee96b24fd89be029": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-f004ff88a8bd3463": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f15b39690aff8048": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f1966fe558d1bd1a": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-f2a0b796bff6ecf8": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f344575f8e0288f6": {
+      "authentic": 3,
+      "counterfeit": 0
+    },
+    "component-f3610ced1493d72f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f419cd5defb0e72d": {
+      "authentic": 2,
+      "counterfeit": 0
+    },
+    "component-f49413291241a737": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f58e49678eb6f08f": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f684b247555bf0c6": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-f6dc385f52c687b6": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f85431d5cfd0bbea": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-f97e0bf9e1e9a5f0": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fad6d3ce3783e3d1": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-fb193747ff96d3f3": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fb3c182b471fc5a3": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fb61f87dce9c7d3c": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fc76631eb5607618": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fca953e06235e084": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fd38799d3d5b0a4e": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-fd63970d57030d1a": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fe01b611b5df00ad": {
+      "authentic": 1,
+      "counterfeit": 0
+    },
+    "component-fe4cdd150fe68651": {
+      "authentic": 0,
+      "counterfeit": 1
+    },
+    "component-ff419510dbde6e5b": {
+      "authentic": 0,
+      "counterfeit": 1
+    }
+  },
+  "component_label_counts_fingerprint": "1866f0f9d7443c512dad0eb97260b2add7f3b153ee842ffc8ce322e46be09927",
+  "solver_algorithm_version": "exact-component-dp-v1",
+  "solver_status": "optimal",
+  "objective_name": "multi-label-target-proportion-absolute-deviation-v1",
+  "objective_value": 424,
+  "tie_break": "min-objective-then-sum-sha256(seed,component_fingerprint,component_id,partition)-then-sorted-group-mapping-lex-v1",
+  "target_counts": {
+    "train": {
+      "authentic": 235,
+      "counterfeit": 64
+    },
+    "val": {
+      "authentic": 50,
+      "counterfeit": 14
+    },
+    "test": {
+      "authentic": 50,
+      "counterfeit": 14
+    }
+  },
+  "actual_counts": {
+    "train": {
+      "authentic": 235,
+      "counterfeit": 64
+    },
+    "val": {
+      "authentic": 50,
+      "counterfeit": 14
+    },
+    "test": {
+      "authentic": 50,
+      "counterfeit": 14
+    }
+  },
+  "mapping_fingerprint": "9dc142f90ce11ebab61db5b96f3284f1461cd10137e8ebc6b5ac0db12f997fbe",
+  "oracle_algorithm_version": "independent-all-pairs-v1",
+  "oracle_pair_count": 90951,
+  "final_cross_partition_near_duplicate_count": 0
+}

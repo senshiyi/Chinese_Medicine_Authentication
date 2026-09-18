@@ -1,0 +1,29 @@
+{
+  "name": "drynaria-stage-a-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "骨碎补在线真伪鉴定 阶段A PWA（移动端优先）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "preview": "vite preview",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^25.0.1",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.7",
+    "vitest": "^3.0.5",
+    "vue-tsc": "^2.1.10"
+  }
+}

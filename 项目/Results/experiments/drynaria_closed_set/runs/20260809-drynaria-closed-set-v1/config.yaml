@@ -1,0 +1,62 @@
+project_root: "../.."
+data:
+  manifest_path: "项目/Data/experiments/drynaria_closed_set/metadata.csv"
+  unknown_manifest_path: null
+  data_root: "项目/References"
+  provenance: "real"
+  text_encoding: "utf-8-sig"
+  image_size: 224
+  batch_size: 8
+  num_workers: 0
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  seed: 42
+  max_image_bytes: 20971520
+  max_image_pixels: 40000000
+  perceptual_hash_distance: 4
+  split_algorithm_version: "group-stratified-near-duplicate-components-v2"
+  use_weighted_sampler: false
+model:
+  backbone: "efficientnet_b0"
+  pretrained: true
+  freeze_backbone: true
+  unfreeze_epoch: 100
+  dropout: 0.3
+training:
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  claimed_herb_weight: 0.0
+  actual_species_weight: 0.25
+  authenticity_weight: 1.0
+  label_smoothing: 0.0
+  early_stop_patience: 5
+  mixed_precision: false
+  gradient_clip: 1.0
+  min_species_supervision_coverage: 0.0
+  use_authenticity_class_weights: true
+  checkpoint_path: "项目/Models/experiments/drynaria_closed_set.candidate.pth"
+  log_dir: "项目/Results/experiments/drynaria_closed_set/logs"
+calibration:
+  mode: "closed_set_temperature"
+  algorithm_version: "closed-set-temperature-v1"
+  max_unknown_accept_rate: 0.05
+  min_known_selective_accuracy: 0.95
+  output_checkpoint_path: "项目/Models/experiments/drynaria_closed_set.calibrated.candidate.pth"
+evaluation:
+  report_dir: "项目/Results/experiments/drynaria_closed_set/evaluation"
+  bootstrap_samples: 2000
+inference:
+  checkpoint_path: "项目/Models/best_multitask_model.calibrated.pth"
+  device: "cpu"
+  allow_uncalibrated: false
+  max_image_bytes: 20971520
+  max_image_pixels: 40000000
+run:
+  root_dir: "项目/Results/experiments/drynaria_closed_set/runs"
+promotion:
+  min_macro_f1: 0.80
+  min_balanced_accuracy: 0.80
+  min_counterfeit_recall: 0.80
+  target_checkpoint_path: "项目/Models/best_multitask_model.calibrated.pth"

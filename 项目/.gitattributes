@@ -1,0 +1,2 @@
+# 真实数据 manifest 使用 UTF-8-SIG + CRLF；显式声明以稳定 Windows 训练指纹。
+项目/Data/experiments/**/*.csv text eol=crlf

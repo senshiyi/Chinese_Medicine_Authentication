@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=75", "wheel>=0.45"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinese-medicine-authentication"
+version = "0.1.0"
+description = "可校准的中药图片三任务识别系统"
+readme = "使用指南.md"
+requires-python = ">=3.11,<3.13"
+dependencies = []
+
+[tool.setuptools]
+package-dir = {"" = "项目/Files"}
+
+[tool.setuptools.packages.find]
+where = ["项目/Files"]
+include = ["herb_authentication*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["项目/Files"]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = [
+    "项目/Files/config.py",
+    "项目/Files/dataset.py",
+    "项目/Files/model.py",
+    "项目/Files/trainer.py",
+    "项目/Files/transforms.py",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

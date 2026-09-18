@@ -1,0 +1,157 @@
+{
+  "schema_version": 2,
+  "run_id": "20260825-drynaria-closed-set-v2",
+  "evaluation_scope": "closed_set_authenticity",
+  "partition": "locked-test",
+  "experimental_closed_set": true,
+  "open_set_calibrated": false,
+  "limitations": [
+    "仅适用于本数据集定义的骨碎补正品/伪品范围",
+    "缺少批次、来源、设备和拍摄会话元数据，无法排除采集捷径",
+    "伪品实际物种未检验",
+    "没有 unknown calibration/test 数据"
+  ],
+  "fingerprints": {
+    "manifest": "c93b391799ee1787a10a62ac99e54c2919df4f517fbc90aac0a0222040a7412b",
+    "split": "931c7705b768311dae4057c1f3e6cd4bcbc2077f137ea1923b9b2c96ed68d495",
+    "config": "6aeba8c88f16bc0a3fcc6dd0b4cb6a5f2ba52ddd6d3e41ba2b9b5cef22d58100",
+    "source_candidate": "2f65525518d5c8f7fe92b814b1a7be4eddf318ac830efbee221566d04a7ae8b1",
+    "calibration": "e25895c7dce0b1258377561af4a8a5bb73d1e8a6201c627b244d4470a13d1a95"
+  },
+  "metrics": {
+    "class_order": [
+      "authentic",
+      "counterfeit"
+    ],
+    "confusion_matrix": [
+      [
+        46,
+        4
+      ],
+      [
+        2,
+        12
+      ]
+    ],
+    "per_class": {
+      "authentic": {
+        "precision": 0.9583333333333334,
+        "recall": 0.92,
+        "f1": 0.9387755102040817,
+        "support": 50
+      },
+      "counterfeit": {
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "f1": 0.7999999999999999,
+        "support": 14
+      }
+    },
+    "macro_f1": 0.8693877551020408,
+    "balanced_accuracy": 0.8885714285714286,
+    "auroc": 0.98,
+    "pr_auc": 0.9387117685989866,
+    "uncalibrated_probability_quality": {
+      "brier": 0.10765791648779711,
+      "ece": 0.05838246829807755,
+      "nll": 0.1589344220694859
+    },
+    "calibrated_probability_quality": {
+      "brier": 0.11361691832265253,
+      "ece": 0.04931747168302539,
+      "nll": 0.16734066764406957
+    },
+    "bootstrap_95": {
+      "macro_f1": {
+        "lower": 0.7714285714285715,
+        "median": 0.8693877551020408,
+        "upper": 0.9564625850340136,
+        "samples": 2000,
+        "seed": 42
+      },
+      "balanced_accuracy": {
+        "lower": 0.7814285714285715,
+        "median": 0.8942857142857144,
+        "upper": 0.98,
+        "samples": 2000,
+        "seed": 42
+      },
+      "authentic_recall": {
+        "lower": 0.84,
+        "median": 0.92,
+        "upper": 0.98,
+        "samples": 2000,
+        "seed": 42
+      },
+      "authentic_f1": {
+        "lower": 0.888888888888889,
+        "median": 0.9387755102040817,
+        "upper": 0.98,
+        "samples": 2000,
+        "seed": 42
+      },
+      "counterfeit_recall": {
+        "lower": 0.6428571428571429,
+        "median": 0.8571428571428571,
+        "upper": 1.0,
+        "samples": 2000,
+        "seed": 42
+      },
+      "counterfeit_f1": {
+        "lower": 0.6451612903225806,
+        "median": 0.8,
+        "upper": 0.9333333333333333,
+        "samples": 2000,
+        "seed": 42
+      },
+      "auroc": {
+        "lower": 0.9471428571428572,
+        "median": 0.9828571428571429,
+        "upper": 1.0,
+        "samples": 2000,
+        "seed": 42
+      },
+      "pr_auc": {
+        "lower": 0.8543660506160506,
+        "median": 0.9480467944753659,
+        "upper": 0.9999999999999998,
+        "samples": 2000,
+        "seed": 42
+      },
+      "brier": {
+        "lower": 0.03668176930138397,
+        "median": 0.11015896968679631,
+        "upper": 0.20526078753712737,
+        "samples": 2000,
+        "seed": 42
+      },
+      "ece": {
+        "lower": 0.020683064265176673,
+        "median": 0.05755693046376107,
+        "upper": 0.11245869717095044,
+        "samples": 2000,
+        "seed": 42
+      },
+      "nll": {
+        "lower": 0.06305043776687147,
+        "median": 0.16253965221250619,
+        "upper": 0.2908909083948915,
+        "samples": 2000,
+        "seed": 42
+      }
+    }
+  },
+  "thresholds_met": {
+    "thresholds": {
+      "macro_f1": 0.8,
+      "balanced_accuracy": 0.8,
+      "counterfeit_recall": 0.8
+    },
+    "checks": {
+      "macro_f1": true,
+      "balanced_accuracy": true,
+      "counterfeit_recall": true
+    },
+    "passed": true
+  }
+}

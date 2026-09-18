@@ -1,0 +1,59 @@
+# 中药图片三任务识别默认配置（UTF-8）
+# 相对路径统一以 project_root 为基准。
+project_root: "../.."
+
+data:
+  manifest_path: "项目/Data/metadata.csv"
+  unknown_manifest_path: "项目/Data/unknown_metadata.csv"
+  data_root: "项目/References"
+  provenance: "unknown"  # 收集真实数据后显式改为 real；测试夹具使用 synthetic
+  text_encoding: null     # null = UTF-8-SIG 失败后警告并回退 GBK
+  image_size: 224
+  batch_size: 32
+  num_workers: 0
+  train_ratio: 0.7
+  val_ratio: 0.2
+  test_ratio: 0.1
+  seed: 42
+  max_image_bytes: 20971520
+  max_image_pixels: 40000000
+  perceptual_hash_distance: 4
+  use_weighted_sampler: true
+
+model:
+  backbone: "efficientnet_b3"
+  pretrained: true
+  freeze_backbone: true
+  unfreeze_epoch: 5
+  dropout: 0.3
+
+training:
+  epochs: 50
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  claimed_herb_weight: 1.0
+  actual_species_weight: 1.0
+  authenticity_weight: 1.0
+  label_smoothing: 0.1
+  early_stop_patience: 10
+  mixed_precision: true
+  gradient_clip: 1.0
+  min_species_supervision_coverage: 0.2
+  checkpoint_path: "项目/Models/best_multitask_model.pth"
+  log_dir: "项目/Results/logs"
+
+calibration:
+  max_unknown_accept_rate: 0.05
+  min_known_selective_accuracy: 0.95
+  output_checkpoint_path: "项目/Models/best_multitask_model.calibrated.pth"
+
+evaluation:
+  report_dir: "项目/Results/evaluation"
+  bootstrap_samples: 1000
+
+inference:
+  checkpoint_path: "项目/Models/best_multitask_model.pth"
+  device: "auto"
+  allow_uncalibrated: false
+  max_image_bytes: 20971520
+  max_image_pixels: 40000000

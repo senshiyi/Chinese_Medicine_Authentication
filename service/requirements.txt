@@ -1,0 +1,14 @@
+# 骨碎补在线鉴伪 阶段A 运行依赖（Python >=3.11,<3.13）
+alembic>=1.13,<2
+argon2-cffi>=23.1,<25
+boto3>=1.34,<2
+celery>=5.4,<6
+fastapi>=0.115,<1
+pillow>=10.4,<12
+psycopg[binary]>=3.2,<4
+pydantic>=2.8,<3
+pydantic-settings>=2.5,<3
+python-multipart>=0.0.9,<1
+redis>=5,<6
+sqlalchemy>=2.0,<3
+uvicorn>=0.30,<1

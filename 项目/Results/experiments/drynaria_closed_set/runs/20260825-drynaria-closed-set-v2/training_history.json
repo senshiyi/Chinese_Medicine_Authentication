@@ -1,0 +1,547 @@
+{
+  "selection_formula": "(authenticity_macro_f1 + authenticity_balanced_accuracy) / 2.0",
+  "best_epoch": 3,
+  "best_selection_score": 0.9099249061326657,
+  "early_stop_reason": "patience_exhausted",
+  "authenticity_class_counts": {
+    "authentic": 235,
+    "counterfeit": 64
+  },
+  "authenticity_class_weights": [
+    0.6361702084541321,
+    2.3359375
+  ],
+  "epochs": [
+    {
+      "epoch": 0,
+      "training": {
+        "losses": {
+          "total": 0.4597764116615356,
+          "claimed_herb": 0.0,
+          "actual_species": 0.11863649874554953,
+          "authenticity": 0.4301172881869967
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.7248159303882196,
+          "authenticity_balanced_accuracy": 0.7799867021276596,
+          "species_macro_f1": 0.989247311827957,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.7524013162579396,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.700699500001065
+      },
+      "validation": {
+        "losses": {
+          "total": 0.2572699396405369,
+          "claimed_herb": 0.0,
+          "actual_species": 0.008984401007182896,
+          "authenticity": 0.25502383965067565
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8628571428571428,
+          "authenticity_balanced_accuracy": 0.8628571428571428,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.8628571428571428,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.237951499999326
+      }
+    },
+    {
+      "epoch": 1,
+      "training": {
+        "losses": {
+          "total": 0.26182737262502165,
+          "claimed_herb": 0.0,
+          "actual_species": 0.004791093124294759,
+          "authenticity": 0.2606296015647941
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8942035512094699,
+          "authenticity_balanced_accuracy": 0.9077127659574469,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9009581585834584,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.477824400000827
+      },
+      "validation": {
+        "losses": {
+          "total": 0.2525755160022527,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0035404505615588278,
+          "authenticity": 0.25169040745822713
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8623655913978494,
+          "authenticity_balanced_accuracy": 0.9299999999999999,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.8961827956989247,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.281351800000266
+      }
+    },
+    {
+      "epoch": 2,
+      "training": {
+        "losses": {
+          "total": 0.16837938132393718,
+          "claimed_herb": 0.0,
+          "actual_species": 0.002333533978183134,
+          "authenticity": 0.16779599809726345
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.9274799902983264,
+          "authenticity_balanced_accuracy": 0.9396609042553192,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9335704472768228,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.901102699997864
+      },
+      "validation": {
+        "losses": {
+          "total": 0.2501304028555751,
+          "claimed_herb": 0.0,
+          "actual_species": 0.001838144482462667,
+          "authenticity": 0.24967086807009764
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8623655913978494,
+          "authenticity_balanced_accuracy": 0.9299999999999999,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.8961827956989247,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.263228899999376
+      }
+    },
+    {
+      "epoch": 3,
+      "training": {
+        "losses": {
+          "total": 0.15762156387635298,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0012892992360311805,
+          "authenticity": 0.15729923720742547
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.9347161572052403,
+          "authenticity_balanced_accuracy": 0.9645279255319149,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9496220413685776,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.743751199999679
+      },
+      "validation": {
+        "losses": {
+          "total": 0.17495475125906523,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0012023340023006313,
+          "authenticity": 0.17465416820778046
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8798498122653317,
+          "authenticity_balanced_accuracy": 0.94,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.9099249061326657,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.2391121000000567
+      }
+    },
+    {
+      "epoch": 4,
+      "training": {
+        "losses": {
+          "total": 0.15284789179881605,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0008760111976452296,
+          "authenticity": 0.15262888829585128
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.9473802095832333,
+          "authenticity_balanced_accuracy": 0.9652260638297872,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9563031367065102,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.702766499998688
+      },
+      "validation": {
+        "losses": {
+          "total": 0.1968418595060939,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0008795495014055632,
+          "authenticity": 0.19662197121942881
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8798498122653317,
+          "authenticity_balanced_accuracy": 0.94,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.9099249061326657,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.2058338999995613
+      }
+    },
+    {
+      "epoch": 5,
+      "training": {
+        "losses": {
+          "total": 0.13035389427157948,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0006466482979725161,
+          "authenticity": 0.13019223159870574
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.9519107050952136,
+          "authenticity_balanced_accuracy": 0.9673537234042553,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9596322142497344,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.621451699997124
+      },
+      "validation": {
+        "losses": {
+          "total": 0.1629741096694488,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0006618353363592178,
+          "authenticity": 0.1628086502532824
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8798498122653317,
+          "authenticity_balanced_accuracy": 0.94,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.9099249061326657,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.2178829000004043
+      }
+    },
+    {
+      "epoch": 6,
+      "training": {
+        "losses": {
+          "total": 0.10692737763591834,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0004727408154805294,
+          "authenticity": 0.10680919333694372
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.9555213963405563,
+          "authenticity_balanced_accuracy": 0.9581117021276595,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9568165492341079,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.531721900002594
+      },
+      "validation": {
+        "losses": {
+          "total": 0.15926112205488607,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0005261710248305462,
+          "authenticity": 0.15912957948603434
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8798498122653317,
+          "authenticity_balanced_accuracy": 0.94,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.9099249061326657,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.218217100002221
+      }
+    },
+    {
+      "epoch": 7,
+      "training": {
+        "losses": {
+          "total": 0.11774245266456868,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0003670004979932344,
+          "authenticity": 0.1176507010570039
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.9564879941789959,
+          "authenticity_balanced_accuracy": 0.9694813829787234,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9629846885788597,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.498159999999189
+      },
+      "validation": {
+        "losses": {
+          "total": 0.18499662749673007,
+          "claimed_herb": 0.0,
+          "actual_species": 0.00043040233867941424,
+          "authenticity": 0.1848890279288753
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8798498122653317,
+          "authenticity_balanced_accuracy": 0.94,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.9099249061326657,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.1984863999969093
+      }
+    },
+    {
+      "epoch": 8,
+      "training": {
+        "losses": {
+          "total": 0.09674296764659626,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0003213574135980497,
+          "authenticity": 0.09666262813014473
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.9569474442044636,
+          "authenticity_balanced_accuracy": 0.9751662234042553,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.785953164100647,
+          "selection_score": 0.9660568338043595,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 235,
+        "batches": 38,
+        "samples": 299,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 10.528678999999102
+      },
+      "validation": {
+        "losses": {
+          "total": 0.13814366923179477,
+          "claimed_herb": 0.0,
+          "actual_species": 0.0003598510338633787,
+          "authenticity": 0.13805370368572767
+        },
+        "diagnostic_metrics": {
+          "claimed_macro_f1": 1.0,
+          "authenticity_macro_f1": 0.8798498122653317,
+          "authenticity_balanced_accuracy": 0.94,
+          "species_macro_f1": 1.0,
+          "species_supervision_coverage": 0.78125,
+          "selection_score": 0.9099249061326657,
+          "selection_tasks": [
+            "authenticity_macro_f1",
+            "authenticity_balanced_accuracy"
+          ]
+        },
+        "species_supervised_rows": 50,
+        "batches": 8,
+        "samples": 64,
+        "freeze_stage": "heads_only",
+        "learning_rates": [
+          0.001
+        ],
+        "duration_seconds": 2.1969714000006206
+      }
+    }
+  ]
+}

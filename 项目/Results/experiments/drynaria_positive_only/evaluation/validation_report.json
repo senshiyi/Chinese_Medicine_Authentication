@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "valid",
+  "counts": {
+    "known": 92,
+    "unknown": 0
+  },
+  "encodings": {
+    "known": "utf-8-sig",
+    "unknown": null
+  },
+  "errors": [],
+  "warnings": []
+}

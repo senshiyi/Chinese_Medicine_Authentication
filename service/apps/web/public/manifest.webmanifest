@@ -1,0 +1,17 @@
+{
+  "name": "骨碎补在线鉴伪·实验版",
+  "short_name": "骨碎补鉴伪",
+  "description": "骨碎补在线图像真伪鉴定（阶段A实验性闭集服务）",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e6f4f",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

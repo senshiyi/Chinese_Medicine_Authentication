@@ -1,0 +1,4 @@
+image_path,group_id,sample_id,unknown_type,dataset_role
+images/unknown_calibration_01.jpg,unknown_batch_01,unknown_sample_01,unknown_herb,calibration
+images/unknown_test_01.jpg,unknown_batch_02,unknown_sample_02,occluded,test
+

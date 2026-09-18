@@ -1,0 +1,7 @@
+image_path,scope_label,split,group_id,source,consent
+in_scope_train_001.jpg,in_scope,train,group_train_001,lab_A_2026-01,true
+out_of_scope_train_001.jpg,out_of_scope,train,group_train_002,field_B_2026-02,true
+in_scope_calib_001.jpg,in_scope,calibration,group_calib_001,lab_A_2026-03,true
+out_of_scope_calib_001.jpg,out_of_scope,calibration,group_calib_002,field_B_2026-03,true
+in_scope_test_001.jpg,in_scope,test,group_test_001,lab_C_2026-04,true
+out_of_scope_test_001.jpg,out_of_scope,test,group_test_002,field_D_2026-04,true

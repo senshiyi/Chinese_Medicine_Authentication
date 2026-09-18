@@ -1,0 +1,34 @@
+{
+  "candidate": "E:\\Desktop\\WorkSpace\\Chinese_Medicine_Authentication\\项目\\Models\\experiments\\drynaria_closed_set.calibrated.candidate.pth",
+  "fingerprints": {
+    "calibration": "e25895c7dce0b1258377561af4a8a5bb73d1e8a6201c627b244d4470a13d1a95",
+    "config": "6aeba8c88f16bc0a3fcc6dd0b4cb6a5f2ba52ddd6d3e41ba2b9b5cef22d58100",
+    "manifest": "c93b391799ee1787a10a62ac99e54c2919df4f517fbc90aac0a0222040a7412b",
+    "source_candidate": "2f65525518d5c8f7fe92b814b1a7be4eddf318ac830efbee221566d04a7ae8b1",
+    "split": "931c7705b768311dae4057c1f3e6cd4bcbc2077f137ea1923b9b2c96ed68d495"
+  },
+  "locked_report_sha256": "a3494f9a2cb973581f65e1378bb38ec1d5c7bd729526586fd2591ecbacb5fb20",
+  "locked_test_metrics": {
+    "balanced_accuracy": 0.8885714285714286,
+    "counterfeit_recall": 0.8571428571428571,
+    "macro_f1": 0.8693877551020408
+  },
+  "new_sha256": "e25895c7dce0b1258377561af4a8a5bb73d1e8a6201c627b244d4470a13d1a95",
+  "old_sha256": null,
+  "promoted_at": "2026-08-25T13:11:01Z",
+  "reservation_sha256": "e86987afb9846feb2b13ead1ae51c0255bfa7e21b0e91583a88f497f724c7f33",
+  "run_id": "20260825-drynaria-closed-set-v2",
+  "schema_version": 1,
+  "target": "E:\\Desktop\\WorkSpace\\Chinese_Medicine_Authentication\\项目\\Models\\best_multitask_model.calibrated.pth",
+  "thresholds": {
+    "balanced_accuracy": 0.8,
+    "counterfeit_recall": 0.8,
+    "macro_f1": 0.8
+  },
+  "validation_metrics": {
+    "balanced_accuracy": 0.94,
+    "counterfeit_recall": 1.0,
+    "macro_f1": 0.8798498122653317
+  },
+  "validation_report_sha256": "c3d92ee18ee9a2e761ef9c2d128bbda27e2aa23e2be47cc04840b7517e27316b"
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "data_provenance": "real",
+  "official_metrics": false,
+  "locked_split_compatible": true,
+  "is_calibrated": false,
+  "checkpoint_provenance": "real",
+  "fingerprints": {
+    "data": "4106522ec4bde52c8ff0857a82eaea5cdc5611878042bc5da622b78e5052fcd9",
+    "checkpoint": "05e93bdb33f4108974c8378f6e072c718bb1394b68b30707e014bba8dc17ceee",
+    "locked_split": "ae19b5a117c9c39395f0bf9ca4f283856d90f40b6de7fbe0bf406ef627aff9ae",
+    "checkpoint_split": "ae19b5a117c9c39395f0bf9ca4f283856d90f40b6de7fbe0bf406ef627aff9ae"
+  },
+  "metric_scopes": {
+    "image_level": "单张图片",
+    "sample_level": "同一 sample_id 聚合",
+    "group_level": "按 group_id 聚合或 bootstrap"
+  },
+  "metrics": {
+    "known": {
+      "status": "complete",
+      "counts": {
+        "images": 12,
+        "samples": 6,
+        "groups": 6
+      },
+      "image_level": {
+        "claimed_macro_f1": 1.0,
+        "authenticity_macro_f1": 0.5,
+        "species_macro_f1": 1.0,
+        "species_supervision_coverage": 1.0,
+        "selection_score": 0.75,
+        "selection_tasks": [
+          "claimed_herb",
+          "actual_species",
+          "authenticity"
+        ]
+      },
+      "sample_level": {
+        "claimed_macro_f1": 1.0,
+        "authenticity_macro_f1": 0.5,
+        "species_macro_f1": 1.0,
+        "species_supervision_coverage": 1.0,
+        "selection_score": 0.75,
+        "selection_tasks": [
+          "claimed_herb",
+          "actual_species",
+          "authenticity"
+        ]
+      },
+      "group_bootstrap": {
+        "lower": 0.75,
+        "median": 0.75,
+        "upper": 0.75,
+        "samples": 200,
+        "seed": 42
+      },
+      "selective": {
+        "eligible": 12,
+        "accepted": 12,
+        "coverage": 1.0,
+        "selective_accuracy": 1.0,
+        "reject_rate": 0.0
+      }
+    },
+    "unknown": {
+      "status": "not_available",
+      "reason": "没有 unknown test 数据"
+    }
+  }
+}

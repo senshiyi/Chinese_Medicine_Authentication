@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drynaria-online-authentication-v2"
+version = "0.1.0"
+description = "骨碎补在线真伪鉴定 阶段A 实验性服务（薄 Web 壳 + 可审计异步闭集推理）。"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "alembic>=1.13,<2",
+    "argon2-cffi>=23.1,<25",
+    "boto3>=1.34,<2",
+    "celery>=5.4,<6",
+    "fastapi>=0.115,<1",
+    "pillow>=10.4,<12",
+    "psycopg[binary]>=3.2,<4",
+    "pydantic>=2.8,<3",
+    "pydantic-settings>=2.5,<3",
+    "python-multipart>=0.0.9,<1",
+    "redis>=5,<6",
+    "sqlalchemy>=2.0,<3",
+    "uvicorn>=0.30,<1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.27,<1",
+    "pytest>=8.3,<9",
+]
+
+[project.scripts]
+drynaria-cli = "drynaria_api.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["apps/api"]
+
+[tool.pytest.ini_options]
+pythonpath = ["apps/api"]
+testpaths = ["apps/api/tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

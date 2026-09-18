@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "data_provenance": "real",
+  "official_metrics": false,
+  "locked_split_compatible": true,
+  "is_calibrated": false,
+  "checkpoint_provenance": "real",
+  "fingerprints": {
+    "data": "c93b391799ee1787a10a62ac99e54c2919df4f517fbc90aac0a0222040a7412b",
+    "checkpoint": "bb56e45f0d86662688fd44107a7c09329dfc557d2ba536d93a2d16782dd371a0",
+    "locked_split": "c9e2e947c4caaebc1a3c79cb06405316d3a7a31361625050a50d34c080915cff",
+    "checkpoint_split": "c9e2e947c4caaebc1a3c79cb06405316d3a7a31361625050a50d34c080915cff"
+  },
+  "metric_scopes": {
+    "image_level": "单张图片",
+    "sample_level": "同一 sample_id 聚合",
+    "group_level": "按 group_id 聚合或 bootstrap"
+  },
+  "metrics": {
+    "known": {
+      "status": "complete",
+      "counts": {
+        "images": 64,
+        "samples": 64,
+        "groups": 64
+      },
+      "image_level": {
+        "claimed_macro_f1": 1.0,
+        "authenticity_macro_f1": 0.8757281553398059,
+        "species_macro_f1": 0.7654320987654321,
+        "species_supervision_coverage": 0.78125,
+        "selection_score": 0.8699791543511403,
+        "selection_tasks": [
+          "claimed_herb",
+          "actual_species",
+          "authenticity"
+        ]
+      },
+      "sample_level": {
+        "claimed_macro_f1": 1.0,
+        "authenticity_macro_f1": 0.8757281553398059,
+        "species_macro_f1": 0.7654320987654321,
+        "species_supervision_coverage": 0.78125,
+        "selection_score": 0.8699791543511403,
+        "selection_tasks": [
+          "claimed_herb",
+          "actual_species",
+          "authenticity"
+        ]
+      },
+      "group_bootstrap": {
+        "lower": 0.7974910779750336,
+        "median": 0.8684842502360097,
+        "upper": 0.9198441201192024,
+        "samples": 2000,
+        "seed": 42
+      },
+      "selective": {
+        "eligible": 50,
+        "accepted": 31,
+        "coverage": 0.62,
+        "selective_accuracy": 1.0,
+        "reject_rate": 0.38
+      }
+    },
+    "unknown": {
+      "status": "not_available",
+      "reason": "没有 unknown test 数据"
+    }
+  }
+}

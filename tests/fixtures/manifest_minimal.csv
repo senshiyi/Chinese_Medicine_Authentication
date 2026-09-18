@@ -1,0 +1,4 @@
+image_path,group_id,sample_id,claimed_herb_name,authenticity,actual_species,species_annotation_status
+images/authentic_01.jpg,batch_auth_01,sample_auth_01,当归,authentic,当归,verified
+images/counterfeit_01.jpg,batch_fake_01,sample_fake_01,当归,counterfeit,欧当归,verified
+
